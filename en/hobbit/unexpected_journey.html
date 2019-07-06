@@ -1,0 +1,605 @@
+<html>
+	<head>
+		<title>MIDDLE EARTH - UNEXPECTED JOURNEY MOVIE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="../functions.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container bg-dark"> 
+				<div class="row">
+					<div class="col col-sm-12">
+						<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">
+									<img src="../images/logo.png" width="50px" height="50px" />
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item mr-2">
+										<a href="../index.html" class="nav-link">
+											HOME
+										</a>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											ABOUT MIDDLE EARTH
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../middle_earth/geography.html">
+												GEOGRAPHY
+											</a>
+											<a class="dropdown-item" href="../middle_earth/history.html">
+												HISTORY
+											</a>
+											<a class="dropdown-item" href="../middle_earth/peoples.html">
+												PEOPLES
+											</a>
+											<a class="dropdown-item" href="../middle_earth/languages.html">
+												LANGUAGES
+											</a>
+										</div>
+									</li>
+									
+									<li class="nav-item active dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											MOVIES
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../lord_of_the_rings/movie.html">
+												THE LORD OF THE RINGS
+											</a>
+											<a class="dropdown-item" href="../hobbit/movie.html">
+												THE HOBBIT
+											</a>		
+										</div>
+									</li>
+									
+										<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											BOOKS
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-header">
+												LORD OF THE RINGS
+											</a>
+											<a class="dropdown-item" href="../books/fellowship_of_the_ring.html">
+												THE FELLOWSHIP OF THE RING
+											</a>
+											<a class="dropdown-item" href="../books/two_towers.html">
+												THE TWO TOWERS
+											</a>
+											<a class="dropdown-item" href="../books/return_of_the_king.html">
+												THE RETURN OF THE KING
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/hobbit.html">
+												THE HOBBIT
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/silmarillion.html">
+												THE SILMARILLION
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/children_of_hurin.html">
+												THE CHILDREN OF HURIN
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/unfinished_tailes.html">
+												THE UNFINISHED TAILES
+											</a>											
+										</div>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../news.html" class="nav-link">
+											NEWS
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../cinema.html" class="nav-link">
+											CINEMA
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../gallery.html" class="nav-link">
+											GALLERY
+										</a>
+									</li>
+
+									<li class="nav-item mr-2">
+										<a href="../wishlist.html" class="nav-link">
+											WISHLIST
+										</a>
+									</li>
+								</ul>
+								
+								<ul class="navbar-nav ml-auto">								
+									<li class="nav-item">
+										<a href="../../sr/hobit/neocekivano_putovanje.html" class="nav-link disabled">
+											<img src="../images/serbian.png" width="25px" height="25px" />
+										</a>
+									</li>
+										<li class="nav-item">
+										<a href="unexpected_journey.html" class="nav-link">
+											<img src="../images/usa.png" width="25px" height="25px" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container bg-dark">
+			<div class="row mb-2">
+				<div class="col col-sm-4">
+					<div class="card bg-secondary">
+						<img src="../images/hobbit1.jpg" class="card-img-top img-responsive h-75" />
+						<div class="card-body text-center">
+							<p id="period1"></p>
+							<script>
+								var num = getReservation("HOBBIT1period1");
+								document.getElementById("period1").innerHTML = "10.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period2"></p>
+							<script>
+								var num = getReservation("HOBBIT1period2");
+								document.getElementById("period2").innerHTML = "10.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period3"></p>
+							<script>
+								var num = getReservation("HOBBIT1period3");
+								document.getElementById("period3").innerHTML = "11.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period4"></p>
+							<script>
+								var num = getReservation("HOBBIT1period4");
+								document.getElementById("period4").innerHTML = "11.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period5"></p>
+							<script>
+								var num = getReservation("HOBBIT1period5");
+								document.getElementById("period5").innerHTML = "12.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period6"></p>
+							<script>
+								var num = getReservation("HOBBIT1period6");
+								document.getElementById("period6").innerHTML = "12.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period7"></p>
+							<script>
+								var num = getReservation("HOBBIT1period7");
+								document.getElementById("period7").innerHTML = "13.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period8"></p>
+							<script>
+								var num = getReservation("HOBBIT1period8");
+								document.getElementById("period8").innerHTML = "14.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period9"></p>
+							<script>
+								var num = getReservation("HOBBIT1period9");
+								document.getElementById("period9").innerHTML = "14.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period10"></p>
+							<script>
+								var num = getReservation("HOBBIT1period10");
+								document.getElementById("period10").innerHTML = "14.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<abbr title="IMDB"><a href="https://www.imdb.com/title/tt0903624/" target="_blank"><img src="../images/IMDb.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Trailer"><a href="https://www.youtube.com/watch?v=SDnYMbYB-nU" target="_blank"><img src="../images/youtube.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Add to Favorites"><a onclick="addToFavorites('(MOVIE) The Hobbit', 'The Unexpected Journey','(FILM) Hobit', 'Neočekivano putovanje', 'images/hobbit1.jpg', 'slike/hobbit1.jpg')"><img src="../images/favorite.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Ticket reservation"><a data-toggle="modal" data-target="#rezervacija"><img src="../images/movie.gif" class="mr-3" width="50px" height="50px"></a></abbr>
+							<div id="rezervacija" class="modal fade" tabindex="-1">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<form method="post" name="hobbit1ticket">
+												<label>First name:</label>
+												<input type="text" name="first_name" required> <br />
+												<label>Last name:</label>
+												<input type="text" name="last_name" required> <br />
+												<label>Phone Number:</label>
+												<input type="text" name="phone" required> <br />
+												<label>Email:</label>
+												<input type="email" name="email" required> <br />
+												<label>Period:</label>:
+												<select name="period">
+													<option value="period1">
+														10.06.2018. 16:00h
+													</option>
+													<option value="period2">
+														10.06.2018. 20:00h
+													</option>
+													<option value="period3">
+														11.06.2018. 16:00h
+													</option>
+													<option value="period4">
+														11.06.2018. 20:00h
+													</option>
+													<option value="period5">
+														12.06.2018. 16:00h
+													</option>
+													<option value="period6">
+														12.06.2018. 20:00h
+													</option>
+													<option value="period7">
+														13.06.2018. 16:00h
+													</option>
+													<option value="period8">
+														13.06.2018. 20:00h
+													</option>
+													<option value="period9">
+														14.06.2018. 16:00h
+													</option>
+													<option value="period10">
+														14.06.2018. 20:00h
+													</option>
+												</select> <br />
+												<button class="btn" type="submit" onclick="HOBBIT1Reservation()">SUBMIT</button> <br /><br />
+												<button class="btn" data-dismiss="modal">CANCEL</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-8 text-warning text-center">
+					<h3>
+						The Hobbit
+					</h3>
+					<h4>
+						The Unexpected Journey
+					</h4>
+					<p class="text-justify">
+						The Hobbit: An Unexpected Journey is a 2012 epic high fantasy adventure film directed by Peter Jackson. 
+						It is the first installment in a three-part film adaptation based on the 1937 novel The Hobbit by J. R. R. Tolkien. 
+						It is followed by The Desolation of Smaug (2013) and The Battle of the Five Armies (2014), and together they act as a
+						prequel to Jackson's The Lord of the Rings film trilogy. The film's screenplay was written by Jackson, his longtime 
+						collaborators Fran Walsh and Philippa Boyens, and Guillermo del Toro, who was originally chosen to direct the film before leaving the project in 2010.
+						<br />
+						The story is set in Middle-earth seventy-seven years before the main events of The Lord of the Rings, and portions 
+						of the film are adapted from the appendices to Tolkien's The Return of the King.[6] An Unexpected Journey tells the 
+						tale of Bilbo Baggins (Martin Freeman), who is convinced by the wizard Gandalf (Ian McKellen) to accompany thirteen Dwarves, 
+						led by Thorin Oakenshield (Richard Armitage), on a quest to reclaim the Lonely Mountain from the dragon Smaug. The ensemble 
+						cast also includes James Nesbitt, Ken Stott, Cate Blanchett, Ian Holm, Christopher Lee, Hugo Weaving, Elijah Wood and Andy Serkis,
+						and features Sylvester McCoy, Barry Humphries and Manu Bennett.
+						<br />
+						An Unexpected Journey premiered on 28 November 2012 in New Zealand and was released internationally on 12 December 2012.
+						The film has grossed over $1 billion at the box office, surpassing both The Fellowship of the Ring and The Two Towers nominally, 
+						becoming the fourth highest-grossing film of 2012 and the 33rd highest-grossing film of all time. Receiving mixed to positive reviews 
+						from critics, the film was nominated for three Academy Awards for Best Visual Effects, Best Production Design, and Best Makeup and Hairstyling.
+						It was also nominated for three British Academy Film Awards.
+						<br />
+						Approaching his 111th birthday, the Hobbit Bilbo Baggins begins writing down the full story of his adventure
+						60 years earlier for the benefit of his nephew Frodo. Long before Bilbo's involvement, the Dwarf king Thrór 
+						brought an era of prosperity for his kin under the Lonely Mountain until the arrival of the dragon Smaug. 
+						Destroying the nearby town of Dale, Smaug drove the Dwarves out of their mountain and took their hoard of gold. 
+						Thrór's grandson, Thorin, sees King Thranduil and his Wood-elves on a nearby hillside, and is dismayed when they
+						leave rather than aid his people, resulting in Thorin's everlasting hatred of Elves.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/ian_mckellen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ian McKellen
+								</h6>
+									<i>Gandalf</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/martin_freeman.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Martin Freeman
+								</h6>
+									<i>Bilbo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/richard_armitage.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Richard Armitage
+								</h6>
+									<i>Thorin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/ken_stott.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ken Stott
+								</h6>
+									<i>Balin</i>
+							</div>
+						</li>
+						<li class="media">
+							<img class="mr-3" src="../images/graham_mcTavish.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Graham McTavish
+								</h6>
+									<i>Dwalin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/william_kircher.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									William Kircher
+								</h6>
+									<i>Bifur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/james_nesbitt.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									James Nesbitt
+								</h6>
+									<i>Bofur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/stephen_hunter.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Stephen Hunter	
+								</h6>
+									<i>Bombur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/dean_o'Gorman.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Dean O'Gorman
+								</h6>
+									<i>Fili</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/aidan_turner.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Aidan Turner
+								</h6>
+									<i>Kili</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/john_callen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									John Callen
+								</h6>
+									<i>Oin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/peter_hambleton.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Peter Hambleton
+								</h6>
+									<i>Gloin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/jed_brophy.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Jed Brophy
+								</h6>
+									<i>Nori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/mark_hadlow.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Mark Hadlow
+								</h6>
+									<i>Dori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/adam_brown.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Adam Brown
+								</h6>
+									<i>Ori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/ian_holm.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ian Holm
+								</h6>
+									<i>Stari Bilbo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/elijah_wood.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Elijah Wood
+								</h6>
+									<i>Frodo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/hugo_weaving.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Hugo Weaving
+								</h6>
+									<i>Elrond</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/cate_blanchett.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Cate Blanchett
+								</h6>
+									<i>Galadriel</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/christopher_lee.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Christopher Lee
+								</h6>
+									<i>Saruman</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/andy_serkis.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Andry Serkis
+								</h6>
+									<i>Golum</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/jeffrey_thomas.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Jeffrey Thomas
+								</h6>
+									<i>Thror</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/lee_pace.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Lee Pace
+								</h6>
+									<i>Thranduil</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/manu_bennet.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Manu Bennet
+								</h6>
+									<i>Azog</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/sylvester_mccoy.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Sylvester McCoy
+								</h6>
+									<i>Radagast</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/conan_stevens.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Conan Stevens
+								</h6>
+									<i>Bolg</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/barry_humphries.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Barry Humphries
+								</h6>
+									<i>Goblin</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container text-center bg-dark pt-5">
+				<i>
+					One Ring to rule them all, One Ring to find them,
+					One Ring to bring them all and in the darkness bind them
+				</i>
+				<br />
+				<img src="../images/ring1.gif" />
+				<br />
+				<div class="text-warning">
+					
+					<span>
+						Copyright 2018 | Marko Jovanovic <br /> Department of Software Engineering, Faculty of Electrical Engineering, Belgrade
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

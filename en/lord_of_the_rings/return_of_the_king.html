@@ -1,0 +1,597 @@
+<html>
+	<head>
+		<title>LORD OF THE RINGS - RETURN OF THE KING MOVIE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="../functions.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container bg-dark"> 
+				<div class="row">
+					<div class="col col-sm-12">
+						<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">
+									<img src="../images/logo.png" width="50px" height="50px" />
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item mr-2">
+										<a href="../index.html" class="nav-link">
+											HOME
+										</a>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											ABOUT MIDDLE EARTH
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../middle_earth/geography.html">
+												GEOGRAPHY
+											</a>
+											<a class="dropdown-item" href="../middle_earth/history.html">
+												HISTORY
+											</a>
+											<a class="dropdown-item" href="../middle_earth/peoples.html">
+												PEOPLES
+											</a>
+											<a class="dropdown-item" href="../middle_earth/languages.html">
+												LANGUAGES
+											</a>
+										</div>
+									</li>
+									
+									<li class="nav-item active dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											MOVIES
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../lord_of_the_rings/movie.html">
+												THE LORD OF THE RINGS
+											</a>
+											<a class="dropdown-item" href="../hobbit/movie.html">
+												THE HOBBIT
+											</a>		
+										</div>
+									</li>
+									
+										<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											BOOKS
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-header">
+												LORD OF THE RINGS
+											</a>
+											<a class="dropdown-item" href="../books/fellowship_of_the_ring.html">
+												THE FELLOWSHIP OF THE RING
+											</a>
+											<a class="dropdown-item" href="../books/two_towers.html">
+												THE TWO TOWERS
+											</a>
+											<a class="dropdown-item" href="../books/return_of_the_king.html">
+												THE RETURN OF THE KING
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/hobbit.html">
+												THE HOBBIT
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/silmarillion.html">
+												THE SILMARILLION
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/children_of_hurin.html">
+												THE CHILDREN OF HURIN
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/unfinished_tailes.html">
+												THE UNFINISHED TAILES
+											</a>											
+										</div>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../news.html" class="nav-link">
+											NEWS
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../cinema.html" class="nav-link">
+											CINEMA
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../gallery.html" class="nav-link">
+											GALLERY
+										</a>
+									</li>
+
+									<li class="nav-item mr-2">
+										<a href="../wishlist.html" class="nav-link">
+											WISHLIST
+										</a>
+									</li>
+								</ul>
+								
+								<ul class="navbar-nav ml-auto">								
+									<li class="nav-item">
+										<a href="../../sr/gospodar_prstenova/povratak_kralja.html" class="nav-link disabled">
+											<img src="../images/serbian.png" width="25px" height="25px" />
+										</a>
+									</li>
+										<li class="nav-item">
+										<a href="return_of_the_king.html" class="nav-link">
+											<img src="../images/usa.png" width="25px" height="25px" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container bg-dark">
+			<div class="row mb-2">
+				<div class="col col-sm-4">
+					<div class="card bg-secondary">
+						<img src="../images/lotr3.jpg" class="card-img-top img-responsive h-75" />
+						<div class="card-body text-center">
+							<p id="period1"></p>
+							<script>
+								var num = getReservation("LOTR3period1");
+								document.getElementById("period1").innerHTML = "05.07.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period2"></p>
+							<script>
+								var num = getReservation("LOTR3period2");
+								document.getElementById("period2").innerHTML = "05.07.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period3"></p>
+							<script>
+								var num = getReservation("LOTR3period3");
+								document.getElementById("period3").innerHTML = "06.07.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period4"></p>
+							<script>
+								var num = getReservation("LOTR3period4");
+								document.getElementById("period4").innerHTML = "06.07.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period5"></p>
+							<script>
+								var num = getReservation("LOTR3period5");
+								document.getElementById("period5").innerHTML = "07.07.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period6"></p>
+							<script>
+								var num = getReservation("LOTR3period6");
+								document.getElementById("period6").innerHTML = "07.07.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period7"></p>
+							<script>
+								var num = getReservation("LOTR3period7");
+								document.getElementById("period7").innerHTML = "08.07.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period8"></p>
+							<script>
+								var num = getReservation("LOTR3period8");
+								document.getElementById("period8").innerHTML = "08.07.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period9"></p>
+							<script>
+								var num = getReservation("LOTR3period9");
+								document.getElementById("period9").innerHTML = "09.07.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period10"></p>
+							<script>
+								var num = getReservation("LOTR3period10");
+								document.getElementById("period10").innerHTML = "09.07.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<abbr title="IMDB"><a href="https://www.imdb.com/title/tt0167260/" target="_blank"><img src="../images/IMDb.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Trailer"><a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target="_blank"><img src="../images/youtube.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Add to Favorites"><a onclick="addToFavorites('(MOVIE) The Lord of the Rings', 'The Two Towers','(FILM) Gospodar Prstenova', 'Dve kule', 'images/lotr3.jpg', 'slike/lotr3.jpg')"><img src="../images/favorite.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Ticket reservation"><a data-toggle="modal" data-target="#rezervacija"><img src="../images/movie.gif" class="mr-3" width="50px" height="50px"></a></abbr>
+							<div id="rezervacija" class="modal fade" tabindex="-1">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<form method="post" name="lotr3ticket">
+												<label>First name:</label>
+												<input type="text" name="first_name" required> <br />
+												<label>Last name:</label>
+												<input type="text" name="last_name" required> <br />
+												<label>Phone number:</label>
+												<input type="text" name="phone" required> <br />
+												<label>Email:</label>
+												<input type="email" name="email" required> <br />
+												<label>Period:</label>:
+												<select name="period">
+													<option value="period1">
+														05.07.2018. 16:00h
+													</option>
+													<option value="period2">
+														05.07.2018. 20:00h
+													</option>
+													<option value="period3">
+														06.07.2018. 16:00h
+													</option>
+													<option value="period4">
+														06.07.2018. 20:00h
+													</option>
+													<option value="period5">
+														07.07.2018. 16:00h
+													</option>
+													<option value="period6">
+														07.07.2018. 20:00h
+													</option>
+													<option value="period7">
+														08.07.2018. 16:00h
+													</option>
+													<option value="period8">
+														08.07.2018. 20:00h
+													</option>
+													<option value="period9">
+														09.07.2018. 16:00h
+													</option>
+													<option value="period10">
+														09.07.2018. 20:00h
+													</option>
+												</select> <br />
+												<button class="btn" type="submit" onclick="LOTR3Reservation()">SUBMIT</button> <br /><br />
+												<button class="btn" data-dismiss="modal">CANCEL</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-8 text-warning text-center">
+					<h3>
+						Lord of the Rings
+					</h3>
+					<h4>
+						The Return of the King
+					</h4>
+					<p class="text-justify">
+						The Lord of the Rings: The Return of the King is a 2003 epic high fantasy adventure film produced, written, 
+						and directed by Peter Jackson based on the second and third volumes of J. R. R. Tolkien's The Lord of the Rings.
+						It is the third and final instalment in The Lord of the Rings trilogy, following The Fellowship of the Ring (2001) 
+						and The Two Towers (2002), preceding The Hobbit film trilogy (2012–14).
+
+						Released on 17 December 2003, The Lord of the Rings: The Return of the King became one of the most critically and
+						commercially successful films of all time.[9] It was the second film to gross $1 billion worldwide ($1.12 billion),
+						becoming the highest-grossing film released by New Line Cinema, as well as the biggest financial success for Time Warner 
+						in general at the time. The film was the highest-grossing film of 2003 and, by the end of its theatrical run, the second 
+						highest-grossing film in history. As of May 2018, it is the 19th highest-grossing film of all time.
+
+						At the 76th Academy Awards, it won all 11 Academy Awards for which it was nominated, therefore holding the record for 
+						highest Oscar sweep. The wins included the awards for Best Picture, the first time a fantasy film has done so,
+						it was also the second sequel to win a Best Picture Oscar (following The Godfather Part II) and Best Director. 
+						The film jointly holds the record for the largest number of Academy Awards won with Ben-Hur (1959) and Titanic (1997). 
+						The film has been re-released twice, in 2011 and 2017.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/alan_howard.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Alan Howard
+								</h6>
+									<i>Rings voice</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/sean_astin.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Sean Astin
+								</h6>
+									<i>Sam</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/elijah_wood.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Elijah Wood
+								</h6>
+									<i>Frodo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/sean_bean.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Sean Bean
+								</h6>
+									<i>Boromir</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/cate_blanchett.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Cate Blanchett
+								</h6>
+									<i>Galadriel</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/orlando_bloom.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Orlando Bloom
+								</h6>
+									<i>Legolas</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/billy_bloyd.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Billy Bloyd
+								</h6>
+									<i>Pippin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/ian_holm.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ian Holm
+								</h6>
+									<i>Bilbo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/christopher_lee.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Christopher Lee
+								</h6>
+									<i>Saruman</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/lawrence_makoare.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Lawrence Makoare
+								</h6>
+									<i>Lurtz</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/andy_serkis.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Andy Serkis
+								</h6>
+									<i>Gollums voice</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/ian_mckellen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ian McKellen
+								</h6>
+									<i>Gandalf</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/dominic_monaghan.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Dominic Monaghan
+								</h6>
+									<i>Merry</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/viggo_mortensen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Viggo Mortensen
+								</h6>
+									<i>Aragorn</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/orlando_bloom.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Orlando Bloom
+								</h6>
+									<i>Legolas</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/john_rhys_davies.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									John Rhys-Davies
+								</h6>
+									<i>Gimli</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/liv_tyler.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Liv Tyler
+								</h6>
+									<i>Arwen</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/hugo_weaving.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Hugo Weaving
+								</h6>
+									<i>Elrond</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/brad_dourif.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Brad Dourif
+								</h6>
+									<i>Wormtongue</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/bernard_hill.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Bernard Hill
+								</h6>
+									<i>Theoden</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/bruce_hopkins.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Bruce Hopkins
+								</h6>
+									<i>Gamling</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/paris_howe_strewe.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Paris Howe Strewe
+								</h6>
+									<i>Teodred</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/miranda_otto.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Miranda Otto
+								</h6>
+									<i>Jovajna</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/karl_urban.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Karl Urban
+								</h6>
+									<i>Eomer</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/david_wenham.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									David Wenham
+								</h6>
+									<i>Faramir</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/john_noble.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									John Noble
+								</h6>
+									<i>Denetor</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/craig_parker.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Craig Parker
+								</h6>
+									<i>Haldir</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container text-center bg-dark pt-5">
+				<i>
+					One Ring to rule them all, One Ring to find them,
+					One Ring to bring them all and in the darkness bind them
+				</i>
+				<br />
+				<img src="../images/ring1.gif" />
+				<br />
+				<div class="text-warning">
+					
+					<span>
+						Copyright 2018 | Marko Jovanovic <br /> Department of Software Engineering, Faculty of Electrical Engineering, Belgrade
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

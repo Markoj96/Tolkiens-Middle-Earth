@@ -1,0 +1,601 @@
+<html>
+	<head>
+		<title>SREDNJA ZEMLJA - BITKA PET ARMIJA  FILM</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="../functions.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container bg-dark"> 
+				<div class="row">
+					<div class="col col-sm-12">
+						<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">
+									<img src="../slike/logo.png" width="50px" height="50px" />
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item mr-2">
+										<a href="../index.html" class="nav-link">
+											POČETNA
+										</a>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											O SREDNJOJ ZEMLJI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../srednja_zemlja/geografija.html">
+												GEOGRAFIJA
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/istorija.html">
+												ISTORIJA
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/narodi.html">
+												NARODI
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/jezici_pisma.html">
+												JEZICI I PISMA
+											</a>
+										</div>
+									</li>
+									
+									<li class="nav-item active dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											FILMOVI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../gospodar_prstenova/film.html">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="../hobit/film.html">
+												HOBIT
+											</a>		
+										</div>
+									</li>
+									
+										<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											KNJIGE
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-header">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="../knjige/druzina_prstena.html">
+												DRUŽINA PRSTENA
+											</a>
+											<a class="dropdown-item" href="../knjige/dve_kule.html">
+												DVE KULE
+											</a>
+											<a class="dropdown-item" href="../knjige/povratak_kralja.html">
+												POVRATAK KRALJA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/hobit.html">
+												HOBIT
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/silmarillion.html">
+												SILMARILLION
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/deca_hurinova.html">
+												DECA HURINOVA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/nezavrsene_price.html">
+												NEZAVRŠENE PRIČE
+											</a>											
+										</div>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../vesti.html" class="nav-link">
+											VESTI
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../bioskop.html" class="nav-link">
+											BIOSKOP
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../galerija.html" class="nav-link">
+											GALERIJA
+										</a>
+									</li>
+
+									<li class="nav-item mr-2">
+										<a href="../lista_zelja.html" class="nav-link">
+											LISTA ŽELJA
+										</a>
+									</li>
+								</ul>
+								
+								<ul class="navbar-nav ml-auto">								
+									<li class="nav-item">
+										<a href="bitka_pet_armija.html" class="nav-link">
+											<img src="../slike/serbian.png" width="25px" height="25px" />
+										</a>
+									</li>
+										<li class="nav-item">
+										<a href="../../en/hobbit/battle_of_five_armies.html" class="nav-link">
+											<img src="../slike/usa.png" width="25px" height="25px" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container bg-dark">
+			<div class="row mb-2">
+				<div class="col col-sm-4">
+					<div class="card bg-secondary">
+						<img src="../slike/hobbit3.jpg" class="card-img-top img-responsive h-75" />
+						<div class="card-body text-center">
+							<p id="period1"></p>
+							<script>
+								var num = getReservation("HOBBIT3period1");
+								document.getElementById("period1").innerHTML = "20.06.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period2"></p>
+							<script>
+								var num = getReservation("HOBBIT3period2");
+								document.getElementById("period2").innerHTML = "20.06.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period3"></p>
+							<script>
+								var num = getReservation("HOBBIT3period3");
+								document.getElementById("period3").innerHTML = "21.06.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period4"></p>
+							<script>
+								var num = getReservation("HOBBIT3period4");
+								document.getElementById("period4").innerHTML = "21.06.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period5"></p>
+							<script>
+								var num = getReservation("HOBBIT3period5");
+								document.getElementById("period5").innerHTML = "22.06.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period6"></p>
+							<script>
+								var num = getReservation("HOBBIT3period6");
+								document.getElementById("period6").innerHTML = "22.06.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period7"></p>
+							<script>
+								var num = getReservation("HOBBIT3period7");
+								document.getElementById("period7").innerHTML = "23.06.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period8"></p>
+							<script>
+								var num = getReservation("HOBBIT3period8");
+								document.getElementById("period8").innerHTML = "24.06.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period9"></p>
+							<script>
+								var num = getReservation("HOBBIT3period9");
+								document.getElementById("period9").innerHTML = "24.06.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period10"></p>
+							<script>
+								var num = getReservation("HOBBIT3period10");
+								document.getElementById("period10").innerHTML = "24.06.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<abbr title="IMDB"><a href="https://www.imdb.com/title/tt2310332/" target="_blank"><img src="../slike/IMDb.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Trailer"><a href="https://www.youtube.com/watch?v=iVAgTiBrrDA" target="_blank"><img src="../slike/youtube.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Dodaj u omiljene"><a onclick="addToFavorites('(MOVIE) The Hobbit', 'The Battle of the Five Armies','(FILM) Hobit', 'Bitka pet armija', 'images/hobbit3.jpg', 'slike/hobbit3.jpg')"><img src="../slike/favorite.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Rezervisi kartu"><a data-toggle="modal" data-target="#rezervacija"><img src="../slike/movie.gif" class="mr-3" width="50px" height="50px"></a></abbr>
+							<div id="rezervacija" class="modal fade" tabindex="-1">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<form method="post" name="hobbit3ticket">
+												<label>Ime:</label>
+												<input type="text" name="first_name" required> <br />
+												<label>Prezime:</label>
+												<input type="text" name="last_name" required> <br />
+												<label>Broj telefona:</label>
+												<input type="text" name="phone" required> <br />
+												<label>Email:</label>
+												<input type="email" name="email" required> <br />
+												<label>Termin:</label>:
+												<select name="period">
+													<option value="period1">
+														20.06.2018. 16:00h
+													</option>
+													<option value="period2">
+														20.06.2018. 20:00h
+													</option>
+													<option value="period3">
+														21.06.2018. 16:00h
+													</option>
+													<option value="period4">
+														21.06.2018. 20:00h
+													</option>
+													<option value="period5">
+														22.06.2018. 16:00h
+													</option>
+													<option value="period6">
+														22.06.2018. 20:00h
+													</option>
+													<option value="period7">
+														23.06.2018. 16:00h
+													</option>
+													<option value="period8">
+														23.06.2018. 20:00h
+													</option>
+													<option value="period9">
+														24.06.2018. 16:00h
+													</option>
+													<option value="period10">
+														24.06.2018. 20:00h
+													</option>
+												</select> <br />
+												<button class="btn" type="submit" onclick="HOBBIT3Reservation()">REZERVIŠI</button> <br /><br />
+												<button class="btn" data-dismiss="modal">OTKAŽI</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-8 text-warning text-center">
+					<h3>
+						Hobit
+					</h3>
+					<h4>
+						Bitka pet armija
+					</h4>
+					<p class="text-justify">
+						Hobit: Bitka pet armija (engl. The Hobbit: The Battle of the Five Armies) je treći deo 
+						fantastične epske filmske trilogije Hobit reditelja Pitera Džeksona snimljen 2014. godine, a zasnovan na istoimenom 
+						romanu Dž. R. R. Tolkina i nastavak filma Hobit: Šmaugova pustošenja iz 2013. godine. Scenario potpisuju Fren Volš, Filipa Bojens,
+						Piter Džekson i Giljermo del Toro, dok su producenti filma Karolin Kaningem, Fren Volš i Piter Džekson. Muziku je komponovao Hauard Šor.
+					
+						Naslovnu ulogu tumači Martin Friman kao hobit Bilbo Bagins, a u ostalim ulogama su Ijan Makelen, 
+						Ričard Armitidž, Orlando Blum, Benedikt Kamberbač, Li Pejs, Luk Evans, Evandželin Lili, Ejdan Terner, Grejam Maktaviš, Džejms Nezbit,
+						Ken Stot, Kejt Blančet, Ijan Holm, Kristofer Li i Hjugo Viving. Svetska premijera filma je bila 1. decembra 2014. u Londonu, 
+						dok je se u Sjedinjenim Američkim Državama počeo prikazivati 17. decembra 2014. godine.
+
+						Budžet filma je iznosio 250 000 000 dolara, a zarada od filma je 956 019 788 dolara.
+						<br /><br />
+						Bilbo i patuljci gledaju sa Erebora kako zmaj Šmaug ostavlja Jezergrad u plamenu, a ljudi Jezergrada beže. 
+						Bard uspeva pobeći iz zatvora, i na kraju ubija Šmauga sa crnom strelom koju mu je doneo njegov sin Bain. Šmaugovo padajuće telo se sruši 
+						na gospodara Jezergrada, koji je bežao na brodu natovaren sa gradskim zlatom. Bard nerado postaje novi vođa Jezergrada, a ljudi traže utočište
+						u ruševinama Dola, dok Legolas putuje u istragu planine Gundabad sa Tauriel. Torin koji je opsednut nad ogromnom blagom u planini, traži opsesivno
+						Sakralkamen, koji je Bilbo prethodno pronašao ali sakrio. Torin, čuvši da su ljudi došli do Dola, naređuje da se ulaz u Erebor zaštiti.
+
+						U međuvremenu, Galadrijela, Elrond i Saruman stižu u Dol Guldur i oslobađaju Gandalfa, poslavši ga na sigurno sa Radagastom. 
+						Oni se bore i pobeđuju Nazgule i Saurona i proteruju ih na istok. Azog, maršira na Erebor sa svojom ogromnom vojskom orka i šalje Bolga u Gundabad da
+						 pozove svoju drugu vojsku.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../slike/ian_mckellen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ian McKellen
+								</h6>
+									<i>Gandalf</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/martin_freeman.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Martin Freeman
+								</h6>
+									<i>Bilbo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/richard_armitage.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Richard Armitage
+								</h6>
+									<i>Thorin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/ken_stott.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ken Stott
+								</h6>
+									<i>Balin</i>
+							</div>
+						</li>
+						<li class="media">
+							<img class="mr-3" src="../slike/graham_mcTavish.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Graham McTavish
+								</h6>
+									<i>Dwalin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/william_kircher.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									William Kircher
+								</h6>
+									<i>Bifur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/james_nesbitt.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									James Nesbitt
+								</h6>
+									<i>Bofur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/stephen_hunter.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Stephen Hunter	
+								</h6>
+									<i>Bombur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/dean_o'Gorman.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Dean O'Gorman
+								</h6>
+									<i>Fili</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../slike/aidan_turner.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Aidan Turner
+								</h6>
+									<i>Kili</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/john_callen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									John Callen
+								</h6>
+									<i>Oin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/peter_hambleton.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Peter Hambleton
+								</h6>
+									<i>Gloin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/jed_brophy.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Jed Brophy
+								</h6>
+									<i>Nori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/mark_hadlow.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Mark Hadlow
+								</h6>
+									<i>Dori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/adam_brown.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Adam Brown
+								</h6>
+									<i>Ori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/luke_evans.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Luke Evans
+								</h6>
+									<i>Bard / Girion</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/elijah_wood.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Elijah Wood
+								</h6>
+									<i>Frodo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/hugo_weaving.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Hugo Weaving
+								</h6>
+									<i>Elrond</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../slike/cate_blanchett.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Cate Blanchett
+								</h6>
+									<i>Galadriel</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/christopher_lee.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Christopher Lee
+								</h6>
+									<i>Saruman</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/mikael_persbrandt.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Mikael Persbrandt
+								</h6>
+									<i>Beorn</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/orlando_bloom.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Orlando Bloom
+								</h6>
+									<i>Legolas</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/lee_pace.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Lee Pace
+								</h6>
+									<i>Thranduil</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/manu_bennet.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Manu Bennet
+								</h6>
+									<i>Azog</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/sylvester_mccoy.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Sylvester McCoy
+								</h6>
+									<i>Radagast</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/billy_connolly.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Billy Connolly
+								</h6>
+									<i>Dain</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/evangeline_lilly.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Evangeline Lilly
+								</h6>
+									<i>Tauriel</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container text-center bg-dark pt-5">
+				<i>
+					Jedan prsten da svima gospodari, jedan sa svima seže 
+					jedan prsten da sve okupi i u tami ih sveže
+				</i>
+				<br />
+				<img src="../slike/ring1.gif" />
+				<br />
+				<div class="text-warning">
+					
+					<span>
+						Copyright 2018 | Marko Jovanovic <br /> Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta u Beogradu
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

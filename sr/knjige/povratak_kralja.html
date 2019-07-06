@@ -1,0 +1,209 @@
+<html>
+	<head>
+		<title>SREDNJA ZEMLJA - POVRATAK KRALJA KNJIGA</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="../functions.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container bg-dark"> 
+				<div class="row">
+					<div class="col col-sm-12">
+						<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">
+									<img src="../slike/logo.png" width="50px" height="50px" />
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item mr-2">
+										<a href="../index.html" class="nav-link">
+											POČETNA
+										</a>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											O SREDNJOJ ZEMLJI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../srednja_zemlja/geografija.html">
+												GEOGRAFIJA
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/istorija.html">
+												ISTORIJA
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/narodi.html">
+												NARODI
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/jezici_pisma.html">
+												JEZICI I PISMA
+											</a>
+										</div>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											FILMOVI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../gospodar_prstenova/film.html">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="../hobit/film.html">
+												HOBIT
+											</a>		
+										</div>
+									</li>
+									
+										<li class="nav-item active dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											KNJIGE
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-header">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="../knjige/druzina_prstena.html">
+												DRUŽINA PRSTENA
+											</a>
+											<a class="dropdown-item" href="../knjige/dve_kule.html">
+												DVE KULE
+											</a>
+											<a class="dropdown-item" href="../knjige/povratak_kralja.html">
+												POVRATAK KRALJA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/hobit.html">
+												HOBIT
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/silmarillion.html">
+												SILMARILLION
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/deca_hurinova.html">
+												DECA HURINOVA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/nezavrsene_price.html">
+												NEZAVRŠENE PRIČE
+											</a>											
+										</div>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../vesti.html" class="nav-link">
+											VESTI
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../bioskop.html" class="nav-link">
+											BIOSKOP
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../galerija.html" class="nav-link">
+											GALERIJA
+										</a>
+									</li>
+
+									<li class="nav-item mr-2">
+										<a href="../lista_zelja.html" class="nav-link">
+											LISTA ŽELJA
+										</a>
+									</li>
+								</ul>
+								
+								<ul class="navbar-nav ml-auto">								
+									<li class="nav-item">
+										<a href="povratak_kralja.html" class="nav-link">
+											<img src="../slike/serbian.png" width="25px" height="25px" />
+										</a>
+									</li>
+										<li class="nav-item">
+										<a href="../../en/books/return_of_the_king.html" class="nav-link">
+											<img src="../slike/usa.png" width="25px" height="25px" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container bg-dark">
+			<div class="row">
+				<div class="col col-sm-4">
+					<div class="card bg-secondary">
+						<img src="../slike/povratak_kralja.jpg" class="card-img-top img-responsive h-75" />
+						<div class="card-body text-center">
+							<abbr title="PDF"><a href="" target="_blank"><img src="../slike/PDF.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="ePUB"><a href="" target="_blank"><img src="../slike/ePUB.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Dodaj u omiljene"><a onclick="addToFavorites('(BOOK) The Lord of the Rings', 'The Return of the King','(KNJIGA) Gospodar Prstenova', 'Povratak kralja', 'images/return_of_the_king.jpg', 'slike/povratak_kralja.jpg')"><img src="../slike/favorite.png" class="mr-3" width="50px" height="50px"></a></abbr>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-8 text-warning text-center">
+					<h3>
+						Gospodar Prstenova Treći Deo
+					</h3>
+					<p class="text-justify">
+						U trećem dijelu, Povratak kralja, nastavljaju se avanture Gandalfa, Aragorna, Gimlija, Legolasa paralelno sa Frodovim i Samovim. 
+						Kao što je rečeno u prvoj knjizi, Družina pomaže u posljednjoj bici protiv Sauronovih snaga, uključujući i opsadu Minas Tirita u 
+						Gondoru i posljednjoj bici za život i smrt pred Crni Dverima Mordora, gdje se savez Gondora i Rohana očajnički bori protiv Sauronove armije,
+						da bi im odvratili pažnju od Prstena, te tako davajući vremena Frodu da ga uništi.
+						<br /><br />
+						U drugoj knjizi, Sam spašava Froda iz zarobljeništva. Nakon mnogo patnje, stižu do Plamen planine, dok ih Golum prati. 
+						Međutim, iskušenje Prstena se pokaže preveliko za Froda i on ga zadržava za sebe, ne želeći ga uništiti. Međutim, 
+						Golum ga napada i uspijeva mu odgristi prst sa Prstenom. Sluđen uspjehom, Golum se posklizne i zajedno s Prstenom pada
+						u vrelu lavu, gdje Prsten konačno biva uništen.
+						<br /><br />
+						Na kraju, Sauron je pobijeđen, i Aragorn biva krunisan kao kralj. Ipak, to nije sve. Saruman uspijeva pobjeći i iskvariti Okrug prije nego umre. 
+						Frodo ostaje ranjen u duši i tijelu i zajedno s Bilbom odlazi na zapad, preko Mora u Valinor, gdje uspijeva naći mir.
+						<br /><br />
+						U skladu sa Tolkinovom vremenskom linijom, događaji u priči se dešavaju između Bilbovog rođendana, 22. septembra 3001. Trećeg doba, 
+						i Samovog povratka u Okrug, 6. oktobra 3021. Trećeg doba. Većina događaja se dešava u 3018 i 3019, zajedno sa polaskom Froda iz Vrećastog
+						Vijenca u Okrugu, 23. septembra 3018 Trećeg Doba, i uništenja Prstena šest mjeseci kasnije, 25. marta 3019 Trećeg doba.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container text-center bg-dark pt-5">
+				<i>
+					Jedan prsten da svima gospodari, jedan sa svima seže 
+					jedan prsten da sve okupi i u tami ih sveže
+				</i>
+				<br />
+				<img src="../slike/ring1.gif" />
+				<br />
+				<div class="text-warning">
+					
+					<span>
+						Copyright 2018 | Marko Jovanovic <br /> Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta u Beogradu
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

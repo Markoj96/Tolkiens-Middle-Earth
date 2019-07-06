@@ -1,0 +1,824 @@
+<html>
+	<head>
+		<title>SREDNJA ZEMLJA - POCETNA</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="functions.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container bg-dark"> 
+				<div class="row">
+					<div class="col col-sm-12">
+						<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="index.html">
+									<img src="slike/logo.png" width="50px" height="50px" />
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item active mr-2">
+										<a href="index.html" class="nav-link">
+											POČETNA
+										</a>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											O SREDNJOJ ZEMLJI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="srednja_zemlja/geografija.html">
+												GEOGRAFIJA
+											</a>
+											<a class="dropdown-item" href="srednja_zemlja/istorija.html">
+												ISTORIJA
+											</a>
+											<a class="dropdown-item" href="srednja_zemlja/narodi.html">
+												NARODI
+											</a>
+											<a class="dropdown-item" href="srednja_zemlja/jezici_pisma.html">
+												JEZICI I PISMA
+											</a>
+										</div>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											FILMOVI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="gospodar_prstenova/film.html">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="hobit/film.html">
+												HOBIT
+											</a>		
+										</div>
+									</li>
+									
+										<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											KNJIGE
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-header">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="knjige/druzina_prstena.html">
+												DRUŽINA PRSTENA
+											</a>
+											<a class="dropdown-item" href="knjige/dve_kule.html">
+												DVE KULE
+											</a>
+											<a class="dropdown-item" href="knjige/povratak_kralja.html">
+												POVRATAK KRALJA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="knjige/hobit.html">
+												HOBIT
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="knjige/silmarillion.html">
+												SILMARILLION
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="knjige/deca_hurinova.html">
+												DECA HURINOVA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="knjige/nezavrsene_price.html">
+												NEZAVRŠENE PRIČE
+											</a>											
+										</div>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="vesti.html" class="nav-link">
+											VESTI
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="BIOSKOP.html" class="nav-link">
+											BIOSKOP
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="galerija.html" class="nav-link">
+											GALERIJA
+										</a>
+									</li>
+
+									<li class="nav-item mr-2">
+										<a href="lista_zelja.html" class="nav-link">
+											LISTA ŽELJA
+										</a>
+									</li>
+								</ul>
+								
+								<ul class="navbar-nav ml-auto">								
+									<li class="nav-item">
+										<a href="index.html" class="nav-link">
+											<img src="slike/serbian.png" width="25px" height="25px" />
+										</a>
+									</li>
+										<li class="nav-item">
+										<a href="../en/index.html" class="nav-link">
+											<img src="slike/usa.png" width="25px" height="25px" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container bg-dark">
+			<div class="row mb-5">
+				<div class="col col-sm-12">
+					<div id="carousel_home" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+							<li data-target="#carousel_home" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel_home" data-slide-to="1"></li>
+							<li data-target="#carousel_home" data-slide-to="2"></li>
+						</ul>
+					
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="slike/slide1.jpg" class="w-100" />
+							</div>
+							
+							<div class="carousel-item">
+								<img src="slike/slide2.jpg" class="w-100" />
+							</div>
+							
+							<div class="carousel-item">
+								<img src="slike/slide3.jpg" class="w-100" />
+							</div>
+						</div>
+						
+						<a class="carousel-control-prev" href="#carousel_home" data-slide="prev">
+							<span class="carousel-control-prev-icon">
+							</span>
+						</a>
+						
+						<a class="carousel-control-next" href="#carousel_home" data-slide="next">
+							<span class="carousel-control-next-icon">
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row pt-5">
+				<div class="col col-sm-12">
+					<ul class="nav nav-tabs bg-dark">
+						<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#izdvajamo">
+									IZDVAJAMO
+								</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#u_bioskopima">
+									U BIOSKOPIMA
+								</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#uskoro">
+									USKORO
+								</a>
+						</li>
+					</ul>
+					
+					<div class="tab-content">
+						<div class="tab-pane active" id="izdvajamo">
+							<div class="container">
+								<div class="row">
+									<div class="col col-sm-4">
+										<div class="card bg-secondary">
+											<img class="card-img-top img-responsive h-50" src="slike/silmarillion.jpg" />
+											<div class="card-body">
+												<a href="knjige/silmarillion.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+											</div>
+										</div>
+									</div>
+									<div class="col col-sm-2">
+										<p class="text-justify text-warning">
+											Kako je knjigu "Simlarillion" teško pronaći na srpskom jeziku, mi smo uspeli da je pronadjemo i sačuvamo. 
+											Odlučili smo da je podelimo sa Vama, ljubiteljima Tolkinove srednje zemlje. Možete je preuzeti u ePUB kao i PDF formatu.
+										</p>
+									</div>
+									<div class="col col-sm-4">
+										<div class="card bg-secondary">
+											<img class="card-img-top img-responsive h-50" src="slike/unfinished_tailes.jpg" />
+											<div class="card-body">
+												<a href="knjige/unfinished_tailes.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+											</div>
+										</div>
+									</div>
+									<div class="col col-sm-2">
+										<p class="text-justify text-warning">
+											Kako je knjigu "Nezavršene priče" teško pronaći na srpskom jeziku, mi smo uspeli da je pronadjemo i sačuvamo. 
+											Odlučili smo da je podelimo sa Vama, ljubiteljima Tolkinove srednje zemlje. Možete je preuzeti u ePUB kao i PDF formatu.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="tab-pane" id="u_bioskopima">
+							<div class="card-deck" id="deck1">
+								<div class="card bg-secondary" id="item0" data-name="Hobit_Neocekivano_Putovanje">
+									<img class="card-img-top" src="slike/hobbit1.jpeg" width="220" height="320" />
+									<div class="card-body">
+										<h5 class="card-title">
+											Hobit
+										</h5>
+										<h6 class="card-subtitle">
+											Neočekivano putovanje
+										</h6>
+										<p class="card-text">
+											Prvi deo fantastične epske filmske trilogije Hobit reditelja Pitera Džeksona.
+										</p>
+										<div class="alert alert-dark">
+											Početak prikazivanja: 10.06.2018.
+											<br />
+											Završetak prikazivanja: 14.06.2018.
+											<br />
+											Termini: 16:00h & 20:00h
+											<br />
+											<span id="ukupno1"></span> 
+											<script>
+												var rezervacija = localStorage.getItem("Hobit_Neocekivano_Putovanje");
+												if(rezervacija == null) rezervacija = 0;
+												document.getElementById("ukupno1").innerHTML = "Ukupno rezervacija: " + rezervacija;
+											</script>
+										</div>
+										<br />
+										<a href="hobit/neocekivano_putovanje.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+										<a href="" class="btn btn-warning" data-toggle="modal" data-target="#rezervacija1">
+											REZERVIŠI KARTU
+										</a>
+										<div id="rezervacija1" class="modal fade" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+													<form method="post" name="hobbit1ticket">
+														<label>Ime:</label>
+														<input type="text" name="first_name" required> <br />
+														<label>Prezime:</label>
+														<input type="text" name="last_name" required> <br />
+														<label>Broj telefona:</label>
+														<input type="text" name="phone" required> <br />
+														<label>Email:</label>
+														<input type="email" name="email" required> <br />
+														<label>Termin:</label>:
+														<select name="period">
+															<option value="period1">
+																10.06.2018. 16:00h
+															</option>
+															<option value="period2">
+																10.06.2018. 20:00h
+															</option>
+															<option value="period3">
+																11.06.2018. 16:00h
+															</option>
+															<option value="period4">
+																11.06.2018. 20:00h
+															</option>
+															<option value="period5">
+																12.06.2018. 16:00h
+															</option>
+															<option value="period6">
+																12.06.2018. 20:00h
+															</option>
+															<option value="period7">
+																13.06.2018. 16:00h
+															</option>
+															<option value="period8">
+																13.06.2018. 20:00h
+															</option>
+															<option value="period9">
+																14.06.2018. 16:00h
+															</option>
+															<option value="period10">
+																14.06.2018. 20:00h
+															</option>
+														</select> <br />
+														<button class="btn" type="submit" onclick="HOBBIT1Reservation()">REZERVIŠI</button> <br /><br />
+														<button class="btn" data-dismiss="modal">OTKAŽI</button>
+													</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="card bg-secondary" id="item1" data-name="Hobit_Smaugova_Pustosenja">
+									<img class="card-img-top" src="slike/hobbit2.jpg" width="220" height="320" />
+									<div class="card-body">
+										<h5 class="card-title">
+											Hobit
+										</h5>
+										<h6 class="card-subtitle">
+											Šmaugova pustošenja
+										</h6>
+										<p class="card-text">
+											Drugi deo fantastične epske filmske trilogije Hobit reditelja Pitera Džeksona.
+										</p>
+										<div class="alert alert-dark">
+											Početak prikazivanja: 15.06.2018.
+											<br />
+											Završetak prikazivanja: 19.06.2018.
+											<br />
+											Termini: 16:00h & 20:00h
+											<br />
+											<span id="ukupno2"></span> 
+											<script>
+												var rezervacija = localStorage.getItem("Hobit_Smaugova_Pustosenja");
+												if(rezervacija == null) rezervacija = 0;
+												document.getElementById("ukupno2").innerHTML = "Ukupno rezervacija: " + rezervacija;
+											</script>
+										</div>
+										<br />
+										<a href="hobit/smaugova_pustosenja.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+										<a href="" class="btn btn-warning" data-toggle="modal" data-target="#rezervacija2">
+											REZERVIŠI KARTU
+										</a>
+										<div id="rezervacija2" class="modal fade" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+													<form method="post" name="hobbit2ticket">
+														<label>Ime:</label>
+														<input type="text" name="first_name" required> <br />
+														<label>Prezime:</label>
+														<input type="text" name="last_name" required> <br />
+														<label>Broj telefona:</label>
+														<input type="text" name="phone" required> <br />
+														<label>Email:</label>
+														<input type="email" name="email" required> <br />
+														<label>Termin:</label>:
+														<select name="period">
+															<option value="period1">
+																15.06.2018. 16:00h
+															</option>
+															<option value="period2">
+																15.06.2018. 20:00h
+															</option>
+															<option value="period3">
+																16.06.2018. 16:00h
+															</option>
+															<option value="period4">
+																16.06.2018. 20:00h
+															</option>
+															<option value="period5">
+																17.06.2018. 16:00h
+															</option>
+															<option value="period6">
+																17.06.2018. 20:00h
+															</option>
+															<option value="period7">
+																18.06.2018. 16:00h
+															</option>
+															<option value="period8">
+																18.06.2018. 20:00h
+															</option>
+															<option value="period9">
+																19.06.2018. 16:00h
+															</option>
+															<option value="period10">
+																19.06.2018. 20:00h
+															</option>
+														</select> <br />
+														<button class="btn" type="submit" onclick="HOBBIT2Reservation()">REZERVIŠI</button> <br /><br />
+														<button class="btn" data-dismiss="modal">OTKAŽI</button>
+													</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="card bg-secondary" id="item2" data-name="Hobit_Bitka_Pet_Armija">
+									<img class="card-img-top" src="slike/hobbit3.jpg" width="220" height="320" />
+									<div class="card-body">
+										<h5 class="card-title">
+											Hobit
+										</h5>
+										<h6 class="card-subtitle">
+											Bitka pet armija
+										</h6>
+										<p class="card-text">
+											Treći deo fantastične epske filmske trilogije Hobit reditelja Pitera Džeksona.
+										</p>
+										<div class="alert alert-dark">
+											Početak prikazivanja: 20.06.2018.
+											<br />
+											Završetak prikazivanja: 24.06.2018.
+											<br />
+											Termini: 16:00h & 20:00h
+											<br />
+											<span id="ukupno3"></span> 
+											<script>
+												var rezervacija = localStorage.getItem("Hobit_Bitka_Pet_Armija");
+												if(rezervacija == null) rezervacija = 0;
+												document.getElementById("ukupno3").innerHTML = "Ukupno rezervacija: " + rezervacija;
+											</script>
+										</div>
+										<br />
+										<a href="hobit/bitka_pet_armija.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+										<a href="" class="btn btn-warning" data-toggle="modal" data-target="#rezervacija3">
+											REZERVIŠI KARTU
+										</a>
+										<div id="rezervacija3" class="modal fade" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+													<form method="post" name="hobbit3ticket">
+														<label>Ime:</label>
+														<input type="text" name="first_name" required> <br />
+														<label>Prezime:</label>
+														<input type="text" name="last_name" required> <br />
+														<label>Broj telefona:</label>
+														<input type="text" name="phone" required> <br />
+														<label>Email:</label>
+														<input type="email" name="email" required> <br />
+														<label>Termin:</label>:
+														<select name="period">
+															<option value="period1">
+																20.06.2018. 16:00h
+															</option>
+															<option value="period2">
+																20.06.2018. 20:00h
+															</option>
+															<option value="period3">
+																21.06.2018. 16:00h
+															</option>
+															<option value="period4">
+																21.06.2018. 20:00h
+															</option>
+															<option value="period5">
+																22.06.2018. 16:00h
+															</option>
+															<option value="period6">
+																22.06.2018. 20:00h
+															</option>
+															<option value="period7">
+																23.06.2018. 16:00h
+															</option>
+															<option value="period8">
+																23.06.2018. 20:00h
+															</option>
+															<option value="period9">
+																24.06.2018. 16:00h
+															</option>
+															<option value="period10">
+																24.06.2018. 20:00h
+															</option>
+														</select> <br />
+														<button class="btn" type="submit" onclick="HOBBIT3Reservation()">REZERVIŠI</button> <br /><br />
+														<button class="btn" data-dismiss="modal">OTKAŽI</button>
+													</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br /><br />
+							<div class="card-deck" id="deck2">
+								<div class="card bg-secondary" id="item3" data-name="Gospodar_Prstenova_Druzina_Prstena">
+									<img class="card-img-top" src="slike/lotr1.jpg" width="220" height="320" />
+									<div class="card-body">
+										<h5 class="card-title">
+											Gospodar Prstenova
+										</h5>
+										<h6 class="card-subtitle">
+											Druzina prstena
+										</h6>
+										<p class="card-text">
+											Prvi filmski deo fantastične trilogije reditelja Pitera Džeksona iz 2001. god, 
+											baziran na romanu engleskog akademika i filologa Džona Ronalda Ruela Tolkina.
+										</p>
+										<div class="alert alert-dark">
+											Početak prikazivanja: 25.06.2018.
+											<br />
+											Završetak prikazivanja: 29.06.2018.
+											<br />
+											Termini: 16:00h & 20:00h
+											<br />
+											<span id="ukupno4"></span> 
+											<script>
+												var rezervacija = localStorage.getItem("Gospodar_Prstenova_Druzina_Prstena");
+												if(rezervacija == null) rezervacija = 0;
+												document.getElementById("ukupno4").innerHTML = "Ukupno rezervacija: " + rezervacija;
+											</script>
+										</div>
+										<br />
+										<a href="gospodar_prstenova/druzina_prstena.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+										<a href="" class="btn btn-warning" data-toggle="modal" data-target="#rezervacija4">
+											REZERVIŠI KARTU
+										</a>
+										<div id="rezervacija4" class="modal fade" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+													<form method="post" name="lotr1ticket">
+														<label>Ime:</label>
+														<input type="text" name="first_name" required> <br />
+														<label>Prezime:</label>
+														<input type="text" name="last_name" required> <br />
+														<label>Broj telefona:</label>
+														<input type="text" name="phone" required> <br />
+														<label>Email:</label>
+														<input type="email" name="email" required> <br />
+														<label>Termin:</label>:
+														<select name="period">
+															<option value="period1">
+																25.06.2018. 16:00h
+															</option>
+															<option value="period2">
+																25.06.2018. 20:00h
+															</option>
+															<option value="period3">
+																26.06.2018. 16:00h
+															</option>
+															<option value="period4">
+																26.06.2018. 20:00h
+															</option>
+															<option value="period5">
+																27.06.2018. 16:00h
+															</option>
+															<option value="period6">
+																27.06.2018. 20:00h
+															</option>
+															<option value="period7">
+																28.06.2018. 16:00h
+															</option>
+															<option value="period8">
+																28.06.2018. 20:00h
+															</option>
+															<option value="period9">
+																29.06.2018. 16:00h
+															</option>
+															<option value="period10">
+																29.06.2018. 20:00h
+															</option>
+														</select> <br />
+														<button class="btn" type="submit" onclick="LOTR1Reservation()">REZERVIŠI</button> <br /><br />
+														<button class="btn" data-dismiss="modal">OTKAŽI</button>
+													</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="card bg-secondary" id="item4" data-name="Gospodar_Prstenova_Dve_Kule">
+									<img class="card-img-top" src="slike/lotr2.jpg" width="220" height="320" />
+									<div class="card-body">
+										<h5 class="card-title">
+											Gospodar Prstenova
+										</h5>
+										<h6 class="card-subtitle">
+											Dve kule
+										</h6>
+										<p class="card-text">
+											Drugi filmski deo fantastične trilogije reditelja Pitera Džeksona iz 2001. god, 
+											baziran na romanu engleskog akademika i filologa Džona Ronalda Ruela Tolkina.
+										</p>
+										<div class="alert alert-dark">
+											Početak prikazivanja: 30.06.2018.
+											<br />
+											Završetak prikazivanja: 04.07.2018.
+											<br />
+											Termini: 16:00h & 20:00h
+											<br />
+											<span id="ukupno5"></span> 
+											<script>
+												var rezervacija = localStorage.getItem("Gospodar_Prstenova_Dve_Kule");
+												if(rezervacija == null) rezervacija = 0;
+												document.getElementById("ukupno5").innerHTML = "Ukupno rezervacija: " + rezervacija;
+											</script>
+										</div>
+										<br />
+										<a href="gospodar_prstenova/dve_kule.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+										<a href="" class="btn btn-warning" data-toggle="modal" data-target="#rezervacija5">
+											REZERVIŠI KARTU
+										</a>
+										<div id="rezervacija5" class="modal fade" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+													<form method="post" name="lotr2ticket">
+														<label>Ime:</label>
+														<input type="text" name="first_name" required> <br />
+														<label>Prezime:</label>
+														<input type="text" name="last_name" required> <br />
+														<label>Broj telefona:</label>
+														<input type="text" name="phone" required> <br />
+														<label>Email:</label>
+														<input type="email" name="email" required> <br />
+														<label>Termin:</label>:
+														<select name="period">
+															<option value="period1">
+																30.06.2018. 16:00h
+															</option>
+															<option value="period2">
+																30.06.2018. 20:00h
+															</option>
+															<option value="period3">
+																01.07.2018. 16:00h
+															</option>
+															<option value="period4">
+																01.07.2018. 20:00h
+															</option>
+															<option value="period5">
+																02.07.2018. 16:00h
+															</option>
+															<option value="period6">
+																02.07.2018. 20:00h
+															</option>
+															<option value="period7">
+																03.07.2018. 16:00h
+															</option>
+															<option value="period8">
+																03.07.2018. 20:00h
+															</option>
+															<option value="period9">
+																04.07.2018. 16:00h
+															</option>
+															<option value="period10">
+																04.07.2018. 20:00h
+															</option>
+														</select> <br />
+														<button class="btn" type="submit" onclick="LOTR2Reservation()">REZERVIŠI</button> <br /><br />
+														<button class="btn" data-dismiss="modal">OTKAŽI</button>
+													</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="card bg-secondary" id="item5" data-name="Gospodar_Prstenova_Povratak_Kralja">
+									<img class="card-img-top" src="slike/lotr3.jpg" width="220" height="320" />
+									<div class="card-body">
+										<h5 class="card-title">
+											Gospodar Prstenova
+										</h5>
+										<h6 class="card-subtitle">
+											Povratak kralja
+										</h6>
+										<p class="card-text">
+											Treći filmski deo fantastične trilogije reditelja Pitera Džeksona iz 2001. god, 
+											baziran na romanu engleskog akademika i filologa Džona Ronalda Ruela Tolkina. 
+										</p>
+										<div class="alert alert-dark">
+											Početak prikazivanja: 05.07.2018.
+											<br />
+											Završetak prikazivanja: 10.07.2018.
+											<br />
+											Termini: 16:00h & 20:00h
+											<br />
+											<span id="ukupno6"></span> 
+											<script>
+												var rezervacija = localStorage.getItem("Gospodar_Prstenova_Povratak_Kralja");
+												if(rezervacija == null) rezervacija = 0;
+												document.getElementById("ukupno6").innerHTML = "Ukupno rezervacija: " + rezervacija;
+											</script>
+										</div>
+										<br />
+										<a href="gospodar_prstenova/povratak_kralja.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+										<a href="" class="btn btn-warning" data-toggle="modal" data-target="#rezervacija6">
+											REZERVIŠI KARTU
+										</a>
+										<div id="rezervacija6" class="modal fade" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-body">
+													<form method="post" name="lotr3ticket">
+														<label>Ime:</label>
+														<input type="text" name="first_name" required> <br />
+														<label>Prezime:</label>
+														<input type="text" name="last_name" required> <br />
+														<label>Broj telefona:</label>
+														<input type="text" name="phone" required> <br />
+														<label>Email:</label>
+														<input type="email" name="email" required> <br />
+														<label>Termin:</label>:
+														<select name="period">
+															<option value="period1">
+																05.07.2018. 16:00h
+															</option>
+															<option value="period2">
+																05.07.2018. 20:00h
+															</option>
+															<option value="period3">
+																06.07.2018. 16:00h
+															</option>
+															<option value="period4">
+																06.07.2018. 20:00h
+															</option>
+															<option value="period5">
+																07.07.2018. 16:00h
+															</option>
+															<option value="period6">
+																07.07.2018. 20:00h
+															</option>
+															<option value="period7">
+																08.07.2018. 16:00h
+															</option>
+															<option value="period8">
+																08.07.2018. 20:00h
+															</option>
+															<option value="period9">
+																09.07.2018. 16:00h
+															</option>
+															<option value="period10">
+																09.07.2018. 20:00h
+															</option>
+														</select> <br />
+														<button class="btn" type="submit" onclick="LOTR3Reservation()">REZERVIŠI</button> <br /><br />
+														<button class="btn" data-dismiss="modal">OTKAŽI</button>
+													</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tab-pane" id="uskoro">
+							<div class="container">
+								<div class="row">
+									<div class="col col-sm-12">
+										<p class="text-justify text-warning">
+											When Peter Jackson first started planning The Lord Of The Rings films back in 1995, 
+											he couldn’t have imagined how it would dominate his life. And now, six movies, 21 Oscars and 23 years later, 
+											we’re heading back to Middle Earth for a brand new Lord of the Rings TV series.
+											<br />
+											Amazon Studios are the lucky lot who’ve been tasked with recreating J.R.R. Tolkien’s literary magic for the
+											small screen, with the company signing a reported $250m rights contract in November 2017 with the author’s estate,
+											publisher HarperCollins and New Line Cinema to produce a multi-season show for television.
+											Here’s everything we know so far about the forthcoming Lord of the Rings TV series.
+											<br />
+											<center>
+												<a href="vesti.html" class="btn btn-warning">PROČITAJ VIŠE</a>
+											</center>
+										</p>
+										
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container text-center bg-dark pt-5">
+				<i>
+					Jedan prsten da svima gospodari, jedan sa svima seže 
+					jedan prsten da sve okupi i u tami ih sveže
+				</i>
+				<br />
+				<img src="slike/ring1.gif" />
+				<br />
+				<div class="text-warning">
+					
+					<span>
+						Copyright 2018 | Marko Jovanovic <br /> Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta u Beogradu
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

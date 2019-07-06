@@ -1,0 +1,599 @@
+<html>
+	<head>
+		<title>SREDNJA ZEMLJA - POVRATAK KRALJA FILM</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="../functions.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container bg-dark"> 
+				<div class="row">
+					<div class="col col-sm-12">
+						<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">
+									<img src="../slike/logo.png" width="50px" height="50px" />
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item mr-2">
+										<a href="../index.html" class="nav-link">
+											POČETNA
+										</a>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											O SREDNJOJ ZEMLJI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../srednja_zemlja/geografija.html">
+												GEOGRAFIJA
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/istorija.html">
+												ISTORIJA
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/narodi.html">
+												NARODI
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/jezici_pisma.html">
+												JEZICI I PISMA
+											</a>
+										</div>
+									</li>
+									
+									<li class="nav-item active dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											FILMOVI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../gospodar_prstenova/film.html">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="../hobit/film.html">
+												HOBIT
+											</a>		
+										</div>
+									</li>
+									
+										<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											KNJIGE
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-header">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="../knjige/druzina_prstena.html">
+												DRUŽINA PRSTENA
+											</a>
+											<a class="dropdown-item" href="../knjige/dve_kule.html">
+												DVE KULE
+											</a>
+											<a class="dropdown-item" href="../knjige/povratak_kralja.html">
+												POVRATAK KRALJA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/hobit.html">
+												HOBIT
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/silmarillion.html">
+												SILMARILLION
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/deca_hurinova.html">
+												DECA HURINOVA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/nezavrsene_price.html">
+												NEZAVRŠENE PRIČE
+											</a>											
+										</div>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../vesti.html" class="nav-link">
+											VESTI
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../bioskop.html" class="nav-link">
+											BIOSKOP
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../galerija.html" class="nav-link">
+											GALERIJA
+										</a>
+									</li>
+
+									<li class="nav-item mr-2">
+										<a href="../lista_zelja.html" class="nav-link">
+											LISTA ŽELJA
+										</a>
+									</li>
+								</ul>
+								
+								<ul class="navbar-nav ml-auto">								
+									<li class="nav-item">
+										<a href="povratak_kralja.html" class="nav-link">
+											<img src="../slike/serbian.png" width="25px" height="25px" />
+										</a>
+									</li>
+										<li class="nav-item">
+										<a href="../../en/lord_of_the_rings/return_of_the_king.html" class="nav-link">
+											<img src="../slike/usa.png" width="25px" height="25px" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container bg-dark">
+			<div class="row mb-2">
+				<div class="col col-sm-4">
+					<div class="card bg-secondary">
+						<img src="../slike/lotr3.jpg" class="card-img-top img-responsive h-75" />
+						<div class="card-body text-center">
+							<p id="period1"></p>
+							<script>
+								var num = getReservation("LOTR3period1");
+								document.getElementById("period1").innerHTML = "05.07.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period2"></p>
+							<script>
+								var num = getReservation("LOTR3period2");
+								document.getElementById("period2").innerHTML = "05.07.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period3"></p>
+							<script>
+								var num = getReservation("LOTR3period3");
+								document.getElementById("period3").innerHTML = "06.07.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period4"></p>
+							<script>
+								var num = getReservation("LOTR3period4");
+								document.getElementById("period4").innerHTML = "06.07.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period5"></p>
+							<script>
+								var num = getReservation("LOTR3period5");
+								document.getElementById("period5").innerHTML = "07.07.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period6"></p>
+							<script>
+								var num = getReservation("LOTR3period6");
+								document.getElementById("period6").innerHTML = "07.07.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period7"></p>
+							<script>
+								var num = getReservation("LOTR3period7");
+								document.getElementById("period7").innerHTML = "08.07.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period8"></p>
+							<script>
+								var num = getReservation("LOTR3period8");
+								document.getElementById("period8").innerHTML = "08.07.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period9"></p>
+							<script>
+								var num = getReservation("LOTR3period9");
+								document.getElementById("period9").innerHTML = "09.07.2018. 16:00h | Broj rezervacija " + num;
+							</script>
+							<p id="period10"></p>
+							<script>
+								var num = getReservation("LOTR3period10");
+								document.getElementById("period10").innerHTML = "09.07.2018. 20:00h | Broj rezervacija " + num;
+							</script>
+							<abbr title="IMDB"><a href="https://www.imdb.com/title/tt0167260/" target="_blank"><img src="../slike/IMDb.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Trailer"><a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target="_blank"><img src="../slike/youtube.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Dodaj u omiljene"><a onclick="addToFavorites('(MOVIE) The Lord of the Rings', 'The Return of the King','(FILM) Gospodar Prstenova', 'Povratak kralja', 'images/lotr3.jpg', 'slike/lotr3.jpg')"><img src="../slike/favorite.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Rezervisi kartu"><a data-toggle="modal" data-target="#rezervacija"><img src="../slike/movie.gif" class="mr-3" width="50px" height="50px"></a></abbr>
+							<div id="rezervacija" class="modal fade" tabindex="-1">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<form method="post" name="lotr3ticket">
+												<label>Ime:</label>
+												<input type="text" name="first_name" required> <br />
+												<label>Prezime:</label>
+												<input type="text" name="last_name" required> <br />
+												<label>Broj telefona:</label>
+												<input type="text" name="phone" required> <br />
+												<label>Email:</label>
+												<input type="email" name="email" required> <br />
+												<label>Termin:</label>:
+												<select name="period">
+													<option value="period1">
+														05.07.2018. 16:00h
+													</option>
+													<option value="period2">
+														05.07.2018. 20:00h
+													</option>
+													<option value="period3">
+														06.07.2018. 16:00h
+													</option>
+													<option value="period4">
+														06.07.2018. 20:00h
+													</option>
+													<option value="period5">
+														07.07.2018. 16:00h
+													</option>
+													<option value="period6">
+														07.07.2018. 20:00h
+													</option>
+													<option value="period7">
+														08.07.2018. 16:00h
+													</option>
+													<option value="period8">
+														08.07.2018. 20:00h
+													</option>
+													<option value="period9">
+														09.07.2018. 16:00h
+													</option>
+													<option value="period10">
+														09.07.2018. 20:00h
+													</option>
+												</select> <br />
+												<button class="btn" type="submit" onclick="LOTR3Reservation()">REZERVIŠI</button> <br /><br />
+												<button class="btn" data-dismiss="modal">OTKAŽI</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-8 text-warning text-center">
+					<h3>
+						Gospodar Prstenova
+					</h3>
+					<h4>
+						Povratak kralja
+					</h4>
+					<p class="text-justify">
+						Gospodar prstenova: Povratak kralja (engl. The Lord of the Rings: The Return of the King) je treći deo fantastične filmske
+						trilogije reditelja Pitera Džeksona snimljen 2003, a zasnovan na romanu Dž. R. R. Tolkina. Film je osvojio 11 Oskara
+						(čime se izjednačio sa filmovima „Titanik“ i "Ben Hur") i četiri Zlatna globusa, mada su neki kritičari prigovarali
+						da borbu dobra i zla predstavlja isuviše pojednostavljeno. Jedna od tema priče je zloupotreba moći i rast iracionalne,
+						slepe mržnje u pojedincu (simbolično predstavljene u prstenu).
+						<br /><br />
+						Film počinje pričom o Smigolu i pričom o tome kako je našao Jedinstveni prsten i kako se postepeno pretvarao u Goluma. 
+						Film prati dve priče. Prva priča je o Frodovim i Semovim pustolovinama dok je druga o Ratu za prsten. Frodo i Sem idu
+						prema planini Orodruin(planina Usuda) kako bi uništili prsten, ali ih na put vodi prevrtljivi i egoistični Golum koji 
+						želi nazad taj prsten po svaku cenu, i mržnja sve više raste u njemu. On ih uspe zavaditi i razdvojiti i odvesti Froda 
+						u klopku, u pećinu divovskog pauka Šelobe, ali ovaj uz Semovu pomoć preživi. Kako su Frodo i Sem opet ujedinjeni, ali 
+						iscrpljeni od gladi i puta, krenu odlučno premu planini ali ih Golum napadne. Istovremeno, Enti zajedno sa Merijem i 
+						Pipinom osvajaju Izengrad. Odmah nakon toga Sauronova vojska orka je počela opsedati grad Minas Tirit, glavni grad Gondora.
+						Orci uspevaju upasti u grad, ali vojska ih ipak odbije. U toku bitke gine Teoden, kralj Rohana, a njegova nećaka Jovajna uz
+						pomoć Merija ubija Kralja-vešca. Kada se čini da je Sauronova vojska pobedila u pomoć ljudima u Minas Tiritu skače Aragorn, 
+						koji je radi odbrane pridobio vojsku duhova pa ljudi uspeju odbraniti Minas Tirit. Tada vojske Gondora i Rohana napadaju Crne
+						dveri kako bi odvukli Sauronu pažunju od Froda. Frodo uništiti prsten zajedno sa Golumom koji je s njim pao u lavu, pa je tako
+						uništio i Saurona. Gandalf je spasio Froda iz Mordora i odneo ga na sigurno.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../slike/alan_howard.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Alan Howard
+								</h6>
+									<i>Glas prstena</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/sean_astin.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Sean Astin
+								</h6>
+									<i>Sem</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/elijah_wood.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Elijah Wood
+								</h6>
+									<i>Frodo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/sean_bean.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Sean Bean
+								</h6>
+									<i>Boromir</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/cate_blanchett.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Cate Blanchett
+								</h6>
+									<i>Galadriel</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/orlando_bloom.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Orlando Bloom
+								</h6>
+									<i>Legolas</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/billy_bloyd.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Billy Bloyd
+								</h6>
+									<i>Pipin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/ian_holm.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ian Holm
+								</h6>
+									<i>Bilbo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/christopher_lee.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Christopher Lee
+								</h6>
+									<i>Saruman</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../slike/lawrence_makoare.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Lawrence Makoare
+								</h6>
+									<i>Lurtz</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/andy_serkis.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Andy Serkis
+								</h6>
+									<i>Glas Goluma</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/ian_mckellen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ian McKellen
+								</h6>
+									<i>Gandalf</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/dominic_monaghan.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Dominic Monaghan
+								</h6>
+									<i>Meri</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/viggo_mortensen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Viggo Mortensen
+								</h6>
+									<i>Aragorn</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/orlando_bloom.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Orlando Bloom
+								</h6>
+									<i>Legolas</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/john_rhys_davies.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									John Rhys-Davies
+								</h6>
+									<i>Gimli</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/liv_tyler.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Liv Tyler
+								</h6>
+									<i>Arwen</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/hugo_weaving.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Hugo Weaving
+								</h6>
+									<i>Elrond</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../slike/brad_dourif.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Brad Dourif
+								</h6>
+									<i>Crvojezik</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/bernard_hill.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Bernard Hill
+								</h6>
+									<i>Teoden</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/bruce_hopkins.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Bruce Hopkins
+								</h6>
+									<i>Gamling</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/paris_howe_strewe.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Paris Howe Strewe
+								</h6>
+									<i>Teodred</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/miranda_otto.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Miranda Otto
+								</h6>
+									<i>Jovajna</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/karl_urban.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Karl Urban
+								</h6>
+									<i>Eomer</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/david_wenham.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									David Wenham
+								</h6>
+									<i>Faramir</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/john_noble.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									John Noble
+								</h6>
+									<i>Denetor</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../slike/craig_parker.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Craig Parker
+								</h6>
+									<i>Haldir</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container text-center bg-dark pt-5">
+				<i>
+					Jedan prsten da svima gospodari, jedan sa svima seže 
+					jedan prsten da sve okupi i u tami ih sveže
+				</i>
+				<br />
+				<img src="../slike/ring1.gif" />
+				<br />
+				<div class="text-warning">
+					
+					<span>
+						Copyright 2018 | Marko Jovanovic <br /> Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta u Beogradu
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,599 @@
+<html>
+	<head>
+		<title>MIDDLE EARTH - BATTLE OF FIVE ARMIES MOVIE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="../functions.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container bg-dark"> 
+				<div class="row">
+					<div class="col col-sm-12">
+						<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">
+									<img src="../images/logo.png" width="50px" height="50px" />
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item mr-2">
+										<a href="../index.html" class="nav-link">
+											HOME
+										</a>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											ABOUT MIDDLE EARTH
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../middle_earth/geography.html">
+												GEOGRAPHY
+											</a>
+											<a class="dropdown-item" href="../middle_earth/history.html">
+												HISTORY
+											</a>
+											<a class="dropdown-item" href="../middle_earth/peoples.html">
+												PEOPLES
+											</a>
+											<a class="dropdown-item" href="../middle_earth/languages.html">
+												LANGUAGES
+											</a>
+										</div>
+									</li>
+									
+									<li class="nav-item active dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											MOVIES
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../lord_of_the_rings/movie.html">
+												THE LORD OF THE RINGS
+											</a>
+											<a class="dropdown-item" href="../hobbit/movie.html">
+												THE HOBBIT
+											</a>		
+										</div>
+									</li>
+									
+										<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											BOOKS
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-header">
+												LORD OF THE RINGS
+											</a>
+											<a class="dropdown-item" href="../books/fellowship_of_the_ring.html">
+												THE FELLOWSHIP OF THE RING
+											</a>
+											<a class="dropdown-item" href="../books/two_towers.html">
+												THE TWO TOWERS
+											</a>
+											<a class="dropdown-item" href="../books/return_of_the_king.html">
+												THE RETURN OF THE KING
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/hobbit.html">
+												THE HOBBIT
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/silmarillion.html">
+												THE SILMARILLION
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/children_of_hurin.html">
+												THE CHILDREN OF HURIN
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../books/unfinished_tailes.html">
+												THE UNFINISHED TAILES
+											</a>											
+										</div>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../news.html" class="nav-link">
+											NEWS
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../cinema.html" class="nav-link">
+											CINEMA
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../gallery.html" class="nav-link">
+											GALLERY
+										</a>
+									</li>
+
+									<li class="nav-item mr-2">
+										<a href="../wishlist.html" class="nav-link">
+											WISHLIST
+										</a>
+									</li>
+								</ul>
+								
+								<ul class="navbar-nav ml-auto">								
+									<li class="nav-item">
+										<a href="../../sr/hobit/bitka_pet_armija.html" class="nav-link disabled">
+											<img src="../images/serbian.png" width="25px" height="25px" />
+										</a>
+									</li>
+										<li class="nav-item">
+										<a href="battle_of_five_armies.html" class="nav-link">
+											<img src="../images/usa.png" width="25px" height="25px" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container bg-dark">
+			<div class="row mb-2">
+				<div class="col col-sm-4">
+					<div class="card bg-secondary">
+						<img src="../images/hobbit3.jpg" class="card-img-top img-responsive h-75" />
+						<div class="card-body text-center">
+							<p id="period1"></p>
+							<script>
+								var num = getReservation("HOBBIT3period1");
+								document.getElementById("period1").innerHTML = "20.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period2"></p>
+							<script>
+								var num = getReservation("HOBBIT3period2");
+								document.getElementById("period2").innerHTML = "20.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period3"></p>
+							<script>
+								var num = getReservation("HOBBIT3period3");
+								document.getElementById("period3").innerHTML = "21.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period4"></p>
+							<script>
+								var num = getReservation("HOBBIT3period4");
+								document.getElementById("period4").innerHTML = "21.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period5"></p>
+							<script>
+								var num = getReservation("HOBBIT3period5");
+								document.getElementById("period5").innerHTML = "22.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period6"></p>
+							<script>
+								var num = getReservation("HOBBIT3period6");
+								document.getElementById("period6").innerHTML = "22.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period7"></p>
+							<script>
+								var num = getReservation("HOBBIT3period7");
+								document.getElementById("period7").innerHTML = "23.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period8"></p>
+							<script>
+								var num = getReservation("HOBBIT3period8");
+								document.getElementById("period8").innerHTML = "24.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<p id="period9"></p>
+							<script>
+								var num = getReservation("HOBBIT3period9");
+								document.getElementById("period9").innerHTML = "24.06.2018. 16:00h | Tickets reserved " + num;
+							</script>
+							<p id="period10"></p>
+							<script>
+								var num = getReservation("HOBBIT3period10");
+								document.getElementById("period10").innerHTML = "24.06.2018. 20:00h | Tickets reserved " + num;
+							</script>
+							<abbr title="IMDB"><a href="https://www.imdb.com/title/tt2310332/" target="_blank"><img src="../images/IMDb.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Trailer"><a href="https://www.youtube.com/watch?v=iVAgTiBrrDA" target="_blank"><img src="../images/youtube.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Add to Favorites"><a onclick="addToFavorites('(MOVIE) The Hobbit', 'The Battle of the Five Armies','(FILM) Hobit', 'Bitka pet armija', 'images/hobbit3.jpg', 'slike/hobbit3.jpg')"><img src="../images/favorite.png" class="mr-3" width="50px" height="50px"></a></abbr>
+							<abbr title="Ticket reservation"><a data-toggle="modal" data-target="#rezervacija"><img src="../images/movie.gif" class="mr-3" width="50px" height="50px"></a></abbr>
+							<div id="rezervacija" class="modal fade" tabindex="-1">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<form method="post" name="hobbit3ticket">
+												<label>First name:</label>
+												<input type="text" name="first_name" required> <br />
+												<label>Last name:</label>
+												<input type="text" name="last_name" required> <br />
+												<label>Phone number:</label>
+												<input type="text" name="phone" required> <br />
+												<label>Email:</label>
+												<input type="email" name="email" required> <br />
+												<label>Period:</label>:
+												<select name="period">
+													<option value="period1">
+														20.06.2018. 16:00h
+													</option>
+													<option value="period2">
+														20.06.2018. 20:00h
+													</option>
+													<option value="period3">
+														21.06.2018. 16:00h
+													</option>
+													<option value="period4">
+														21.06.2018. 20:00h
+													</option>
+													<option value="period5">
+														22.06.2018. 16:00h
+													</option>
+													<option value="period6">
+														22.06.2018. 20:00h
+													</option>
+													<option value="period7">
+														23.06.2018. 16:00h
+													</option>
+													<option value="period8">
+														23.06.2018. 20:00h
+													</option>
+													<option value="period9">
+														24.06.2018. 16:00h
+													</option>
+													<option value="period10">
+														24.06.2018. 20:00h
+													</option>
+												</select> <br />
+												<button class="btn" type="submit" onclick="HOBBIT3Reservation()">SUBMIT</button> <br /><br />
+												<button class="btn" data-dismiss="modal">CANCEL</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-sm-8 text-warning text-center">
+					<h3>
+						The Hobbit
+					</h3>
+					<h4>
+						Battle of the Five Armies
+					</h4>
+					<p class="text-justify">
+						The Hobbit: The Battle of the Five Armies is a 2014 epic high fantasy action film directed by Peter Jackson and written by Jackson,
+						Fran Walsh, Philippa Boyens, and Guillermo del Toro. It is the third and final installment in Peter Jackson's three-part film adaptation 
+						based on the novel The Hobbit by J. R. R. Tolkien, following An Unexpected Journey (2012) and The Desolation of Smaug (2013), and together
+						they act as a prequel to Jackson's The Lord of the Rings film trilogy.
+						<br />
+						It was produced by New Line Cinema, Metro-Goldwyn-Mayer and WingNut Films, and distributed by Warner Bros. Pictures. 
+						The Battle of the Five Armies was released on December 11, 2014 in New Zealand, December 12, 2014 in the United Kingdom, 
+						and on December 17, 2014 in the United States. It stars Martin Freeman, Ian McKellen, Richard Armitage, Evangeline Lilly, 
+						Luke Evans, Lee Pace, Benedict Cumberbatch, Ken Stott, and James Nesbitt. It also features Cate Blanchett, Ian Holm, Christopher Lee,
+						Hugo Weaving, and Orlando Bloom.
+						<br />
+						The film received mixed reviews and grossed over $956 million worldwide, making it the second highest-grossing film of 2014 
+						(behind Transformers: Age of Extinction) and the 43rd-highest-grossing film of all time. At the 87th Academy Awards, the film 
+						received a nomination for Best Sound Editing.
+						<br />
+						Meanwhile, Galadriel, Elrond, and Saruman arrive at Dol Guldur and free Gandalf, sending him to safety with Radagast. 
+						They battle and defeat the Nazgûl and a formless Sauron himself, banishing them to the East. Azog, marching on Erebor 
+						with his vast Orc army, sends his son Bolg to Gundabad to summon their second army. Legolas and Tauriel witness the
+						march of Bolg's army, bolstered by Orc berserkers and giant bats.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/ian_mckellen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ian McKellen
+								</h6>
+									<i>Gandalf</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/martin_freeman.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Martin Freeman
+								</h6>
+									<i>Bilbo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/richard_armitage.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Richard Armitage
+								</h6>
+									<i>Thorin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/ken_stott.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Ken Stott
+								</h6>
+									<i>Balin</i>
+							</div>
+						</li>
+						<li class="media">
+							<img class="mr-3" src="../images/graham_mcTavish.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Graham McTavish
+								</h6>
+									<i>Dwalin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/william_kircher.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									William Kircher
+								</h6>
+									<i>Bifur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/james_nesbitt.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									James Nesbitt
+								</h6>
+									<i>Bofur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/stephen_hunter.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Stephen Hunter	
+								</h6>
+									<i>Bombur</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/dean_o'Gorman.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Dean O'Gorman
+								</h6>
+									<i>Fili</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/aidan_turner.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Aidan Turner
+								</h6>
+									<i>Kili</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/john_callen.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									John Callen
+								</h6>
+									<i>Oin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/peter_hambleton.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Peter Hambleton
+								</h6>
+									<i>Gloin</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/jed_brophy.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Jed Brophy
+								</h6>
+									<i>Nori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/mark_hadlow.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Mark Hadlow
+								</h6>
+									<i>Dori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/adam_brown.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Adam Brown
+								</h6>
+									<i>Ori</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/luke_evans.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Luke Evans
+								</h6>
+									<i>Bard / Girion</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/elijah_wood.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Elijah Wood
+								</h6>
+									<i>Frodo</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/hugo_weaving.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Hugo Weaving
+								</h6>
+									<i>Elrond</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-sm-4">
+					<ul class="list-unstyled text-warning">
+						<li class="media">
+							<img class="mr-3" src="../images/cate_blanchett.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Cate Blanchett
+								</h6>
+									<i>Galadriel</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/christopher_lee.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Christopher Lee
+								</h6>
+									<i>Saruman</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/mikael_persbrandt.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Mikael Persbrandt
+								</h6>
+									<i>Beorn</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/orlando_bloom.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Orlando Bloom
+								</h6>
+									<i>Legolas</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/lee_pace.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Lee Pace
+								</h6>
+									<i>Thranduil</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/manu_bennet.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Manu Bennet
+								</h6>
+									<i>Azog</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/sylvester_mccoy.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Sylvester McCoy
+								</h6>
+									<i>Radagast</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/billy_connolly.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Billy Connolly
+								</h6>
+									<i>Dain</i>
+							</div>
+						</li>
+						
+						<li class="media">
+							<img class="mr-3" src="../images/evangeline_lilly.jpg">
+							<div class="media-body mb-2">
+								<h6 class="mb-1">
+									Evangeline Lilly
+								</h6>
+									<i>Tauriel</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container text-center bg-dark pt-5">
+				<i>
+					One Ring to rule them all, One Ring to find them,
+					One Ring to bring them all and in the darkness bind them
+				</i>
+				<br />
+				<img src="../images/ring1.gif" />
+				<br />
+				<div class="text-warning">
+					
+					<span>
+						Copyright 2018 | Marko Jovanovic <br /> Department of Software Engineering, Faculty of Electrical Engineering, Belgrade
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

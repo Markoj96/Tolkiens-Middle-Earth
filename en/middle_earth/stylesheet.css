@@ -1,0 +1,28 @@
+body
+{
+	background-image:url("../images/background2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.dropdown:hover .dropdown-menu 
+{
+	display: block;
+}
+
+.nav-tabs
+{
+	border-bottom:1px solid #343a40;
+}
+
+.nav-tabs .nav-item .active
+{
+	background-color: #343a40;
+	border-color: #343a40 #343a40 #343a40;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus 
+{
+  border-color: #343a40 #343a40 #343a40;
+}

@@ -1,0 +1,597 @@
+<html>
+	<head>
+		<title>SREDNJA ZEMLJA - NARODI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container bg-dark"> 
+				<div class="row">
+					<div class="col col-sm-12">
+						<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">
+									<img src="../slike/logo.png" width="50px" height="50px" />
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbar">
+								<ul class="navbar-nav">
+									<li class="nav-item mr-2">
+										<a href="../index.html" class="nav-link">
+											POČETNA
+										</a>
+									</li>
+									
+									<li class="nav-item active dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											O SREDNJOJ ZEMLJI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../srednja_zemlja/geografija.html">
+												GEOGRAFIJA
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/istorija.html">
+												ISTORIJA
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/narodi.html">
+												NARODI
+											</a>
+											<a class="dropdown-item" href="../srednja_zemlja/jezici_pisma.html">
+												JEZICI I PISMA
+											</a>
+										</div>
+									</li>
+									
+									<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											FILMOVI
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="../gospodar_prstenova/film.html">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="../hobit/film.html">
+												HOBIT
+											</a>		
+										</div>
+									</li>
+									
+										<li class="nav-item dropdown mr-2">
+										<a href="#" class="nav-link dropdown-toggle">
+											KNJIGE
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-header">
+												GOSPODAR PRSTENOVA
+											</a>
+											<a class="dropdown-item" href="../knjige/druzina_prstena.html">
+												DRUŽINA PRSTENA
+											</a>
+											<a class="dropdown-item" href="../knjige/dve_kule.html">
+												DVE KULE
+											</a>
+											<a class="dropdown-item" href="../knjige/povratak_kralja.html">
+												POVRATAK KRALJA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/hobit.html">
+												HOBIT
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/silmarillion.html">
+												SILMARILLION
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/deca_hurinova.html">
+												DECA HURINOVA
+											</a>
+											<div class="dropdown-divider"> </div>
+											<a class="dropdown-item" href="../knjige/nezavrsene_price.html">
+												NEZAVRŠENE PRIČE
+											</a>											
+										</div>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../vesti.html" class="nav-link">
+											VESTI
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../bioskop.html" class="nav-link">
+											BIOSKOP
+										</a>
+									</li>
+									
+									<li class="nav-item mr-2">
+										<a href="../galerija.html" class="nav-link">
+											GALERIJA
+										</a>
+									</li>
+
+									<li class="nav-item mr-2">
+										<a href="../lista_zelja.html" class="nav-link">
+											LISTA ŽELJA
+										</a>
+									</li>
+								</ul>
+								
+								<ul class="navbar-nav ml-auto">								
+									<li class="nav-item">
+										<a href="narodi.html" class="nav-link">
+											<img src="../slike/serbian.png" width="25px" height="25px" />
+										</a>
+									</li>
+										<li class="nav-item">
+										<a href="../../en/middle_earth/peoples.html" class="nav-link">
+											<img src="../slike/usa.png" width="25px" height="25px" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container jumbotron bg-warning mb-0">
+			<div class="row">
+				<div class="col col-sm-12">
+					<div class="text-justify">
+						<br /><br />
+						<ul class="nav nav-tabs bg-warning">
+							<li class="nav-item">
+									<a class="nav-link text-danger" data-toggle="tab" href="#ainuri">
+										AINURI
+									</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-danger" data-toggle="tab" href="#valari">
+										VALARI
+									</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-danger" data-toggle="tab" href="#majari">
+										MAJARI
+									</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-danger" data-toggle="tab" href="#vilenjaci">
+										VILENJACI
+									</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-danger active" data-toggle="tab" href="#ljudi">
+										LJUDI
+									</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-danger" data-toggle="tab" href="#patuljci">
+										PATULJCI
+									</a>
+							</li>
+							<li class="nav-item">
+									<a class="nav-link text-danger" data-toggle="tab" href="#hobiti">
+										HOBITI
+									</a>
+							</li>
+							<li class="nav-item dropdown">
+									<a class="nav-link text-danger dropdown-toggle" data-toggle="dropdown" href="#">
+										OSTALE RASE
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" data-toggle="tab" href="#orci_trolovi">
+											ORCI I TROLOVI
+										</a>
+										<a class="dropdown-item" data-toggle="tab" href="#enti">
+											ENTI
+										</a>
+										<a class="dropdown-item" data-toggle="tab" href="#zivotinje">
+											ŽITOVINJE
+										</a>
+									</div>
+							</li>
+						</ul>
+						
+						<div class="tab-content">
+							<div class="tab-pane" id="ainuri">
+								<div class="bg-warning text-justify">
+									Ainuri su anđeoska bića stvorena od strane boga Eru Iluvatara. 
+									Mit o postanju sveta se naziva Ainulindale ili u prevodu Muzika Ainura, 
+									pošto je Iluvatar stvorio Ainure da bi mu stvarali muziku po njegovoj zamisli,
+									a ovaj je kasnije od te muzike stvorio svet (Eu). Ainuri se prema moći dele na Valare i Majare.
+								</div>
+							</div>
+							
+							<div class="tab-pane" id="valari">
+								<div class="bg-warning text-justify">
+									Valari (jednina: Vala) su najmoćnija bogolika i anđeoska bića stvorena od Iluvatara. 
+									Oni su zajedno sa ostalim Ainurima došli u svet sa ciljem da nastave njegovo fizičko 
+									oblikovanje i pripreme ga za dolazak dece Iluvatarove (vilenjake i ljude). 
+									Kada su Valari stigli u svet svaki od Valara se nastanio i povezao sa nekim delom 
+									sveta vazduhom, vodom, vatrom, svetlosti, biljkama, životinjama, šumama itd. 
+									Valara ima 15, sedam muških gospodara (engl. Lords) i sedam ženskih kraljica, plus Melkor koji je prognan, i oni su:
+									<br /><br />
+									<b>Manve</b> - Kralj Valara i gospodar vetra, muž Varde. <br />
+									<b>Ulmo</b> - Gospodar mora i morskih dubina jedini neoženjen Vala. <br />
+									<b>Aule</b> - Vala kovač i veliki stvoritelj, muž Javanin i tvorac sedam očeva patuljaka. <br />
+									<b>Orome</b> - Gospodar drveća, veliki lovac i jahač, muž Vanin. <br />
+									<b>Mandos</b> - Sudija mrtvih, desna ruka Manveu i čuvar duša vilenjaka, muž Vaire. <br />
+									<b>Irmo</b> - Gospodar vizija i snova, kasnije prozvan Lorjen, muž Este. <br />
+									<b>Tulkas</b> - Takođe znan kao Tulkas Moćni, ratnik i šampion Valara, muž Nese. <br />
+									<b>Melkor</b> - Gospodar vatre i mraka, najmoćniji od svih Valara. Zarobljen od strane ostalih Valara i poslat u ništavilo.
+									<br /><br />			
+									Kraljice:
+									<br />
+									<b>Varda</b> - Kraljica zvezda, supruga Manvea. Stvorila je zvezde i darovala svetlost svetu.<br />
+									<b>Javana</b> - Kraljica zemlje i svih živih bića, supruga Aulea. Stvorila je drveće i životinje, 
+										takođe je stvorila dva drveta Valinora. <br />
+									<b>Nijena</b> - Gospodarica milosti. Konstantno je plakala zbog patnje sveta i svojim suzama zalivala
+										dva drveta Valara. Nije imala muža. <br />
+									<b>Este</b> - Irmova žena, znana kao Nežna i izlečiteljka svih rana i briga. <br />
+									<b>Vaire</b> - Vaire poznatija kao Vezilja, bila je žena Mandosa i priče sveta je vezla u prelepe tapiserije. <br />
+									<b>Vana</b> - Kraljica cveća prozvana Zauvek-mlada takođe je bila i žena Oromea. <br />
+									<b>Nesa</b> - Zvana Plesačica, bila je čuvena po svojoj gracioznosti. Takođe je i Tulkasova žena. <br />
+								</div>
+							</div>
+							
+							<div class="tab-pane" id="majari">
+								<div class="bg-warning text-justify">
+									Pored Valara postojala su i niža anđeoska bića Ainura pod nazivom Majari. 
+									Oni su takođe stvoreni od strane Iluvatara i iste su prirode kao Valari 
+									ali su nižeg ranga i poseduju slabije moći. Posle pobune Melkora neki od 
+									Majara su prešli na njegovu stranu. Najmoćniji Majari su: Sauron 
+									(najmoćniji od svih Majara),[28] Ilmare, Eonve, Arijena, Istari 
+									(petorica majara koji su došli u Srednju zemlju sa zadatkom da pomognu živim bićima):
+									Kurunir (jedan od istara poznatiji kao Saruman Beli), Aivendil (poznatiji kao Radagast Mrki), 
+									Olorion (poznatiji kao Gandalf Sivi), Alatar i Palando (poznatiji kao plavi čarobnjaci). 
+									Kao suprotnost njima sa druge strane se nalaze majari u službi Melkora - Balrozi.
+								</div>
+							</div>
+							
+							<div class="tab-pane" id="vilenjaci">
+								<div class="media">
+									<div class="media-left">
+										<a href="" data-toggle="modal" data-target="#vilenjaci_slika">
+											<img class="img-responsive mr-3" src="../slike/elf_tree.png" style="width:200px; margin-top:10px;">
+										</a>
+										<div id="vilenjaci_slika" class="modal fade" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content text-center">
+													<div class="modal-body">
+														<img src="../slike/elf_tree.png" class="img img-fluid"/>
+														<br />
+														Podela vilenjaka pre odlaska Noldora
+														<br /><br />
+														<form method="post" action="../slike/elf_tree.png">
+															<button type="submit" class="btn btn-dark">PRIKAZI U PUNOJ REZOLUCIJI</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="bg-warning text-justify">
+										Vilenjaci su prvi od „dece Iluvatarove” koji su došli u Srednju zemlju, takođe su poznati i kao „prvorođeni”,
+										mada oni sami sebe nazivaju „Kvendi” (engl. Quendi). Oni su inteligentna bića stvorena isključivo od strane Iluvatara.
+										Vilenjaci su se tokom svoje duge istorije podelili u mnogo klanova. Glavna podela se može izvesti na Kalakvende, 
+										vilenjake svetla odnosi se na one vilenjake koji su videli svetlost dva drveta Valinora, i Morikvende, vilenjake mraka,
+										ovaj termin se odnosi na one vilenjake koji nisu videli svetlost dva drveta Valinora. 
+										Vilenjaci su se probudili pored jezera Kujvijenen i Valari su ih uskoro pronašli i pozvali da se nasele u Aman,
+										većina vilenjaka je prihvatila poziv. Orome (Vala koji ih je pronašao), te vilenjake koji su prihvatili poziv nazvao
+										Eldari, što u prevodu znači zvezdani narod ili pak mudri, dok su one koji su odbili da pođu nazvali Avarima, 
+										što u prevodu znači nevoljni. Oni Eldari koji su se umorili od puta za Aman takođe spadaju u Morikvende (vilenjaci mraka)
+										pošto nikada nisu videli svetlost drveća Valinora, tako da su Morikvende činili Avari i Eldari koji su odustali od puta,
+										tako da je taj termin korišćen za sve vilenjake osim Noldora, Vanjara i Sindara. Uglavnom su vilenjaci mraka (Morikvendi)
+										bili manje moćni od vilenjaka svetla (Kalakvendija) ali termin „mraka” nije njima davao epitet zlih ni na bilo koji način.
+										Oni vilenjaci koji su odustali od puta za Valinor i naselili se u Srednjoj zemlji, dobili su naziv Nandori 
+										(oni koji su odustali) kasnije su postali poznati pod nazivom Silvan vilenjaci tj. 
+										Šumski vilenjaci. Dok su oni od Nandora koji su se nastanili u Belerijandu dobili naziv Laikvendi (Laiquendi) 
+										što u prevodu znači zeleni vilenjaci. Posle određenog vremena neki Kalakvendi su se takođe vratili u Srednju zemlju 
+										(uglavnom iz klana Noldora u potrazi za Silmarilima).
+										<br /><br />
+										Što se tiče fiziče građe, vilenjaci dosta podsećaju na ljude. Po mnogim aspektima oni se mogu smatrati jednakima, 
+										pošto mogu da se venčavaju i imaju decu što se retko dešavalo. Mada vilenjaci imaju vitkija tela i njihova tela blede 
+										tokom vremena spajajući se sa njihovim duhom, Tolkin navodi da bi vilenjaci danas bili poput duhova. 
+										Vilenjaci su veoma agilni i brzi na nogama, i donekle su viši od ljudi. Takođe imaju odličnu koordinaciju, 
+										što je opisano u Gospodaru prstenova kada vilenjaci hodaju preko užadi u Lotlorijenu. Imaju veoma razvijen vid 
+										(vilin-vid), pa su u mogućnosti da vide kilometrima daleko. Takođe veoma su laki na nogama što je opisano 
+										kada družina prstena prelazi Karadras tj. kada Legolas gazi po veoma dubokom snegu bez većih poteškoća i propadanja.
+										Takođe prilikom odrastanja, njihova tela dođu do tačke kada prestaju da stare. Iako su besmrtni, 
+										vilenjake je moguće fizički ubiti, u tom slučaju njihove duše odlaze u Valinor gde dobijaju novo telo i nastavljaju da žive.
+										Takođe njihova tela isijavaju slabom svetlošću, a njihove uši su blago zašiljene.
+										<br /><br />
+										Vilenjacima su napravili u tajnosti tri prstena moći, nakon što su otkrili prevaru koju je Sauron sproveo. 
+										Ta tri prstena moći su bili: Narija, prsten vatre, koji je bio dat Kirdanu brodograditelju, a on ga je prosledio Gandalfu.
+										Nenija, prsten vode, je dat Galadrijeli ovaj prsten je posedovao moći zvezda; Vilija, prsten vazduha, 
+										koji je dat Visokom kralju vilenjaka Gil-galadu ali je nakon njegove smrti pripao Elrondu 
+										kao najvećem iscelitelju u Srednjoj zemlji. Do kraja četvrtog doba svi vilenjaci su napustili 
+										Srednju zemlju odlazeći u Neumiruće Zemlje.
+										<br /><br />
+										Neki od značajnijih vilenjaka su bili: Elrond, Tingol, Feanor, Fingolfin, Galadrijela, Gil-galad, Fingon, Finve, Turgon itd.
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane active" id="ljudi">
+								<div class="bg-warning text-justify">
+									Ljudi su bili drugorođeni od dece Iluvatarove, probudili su se u Srednjoj zemlji mnogo kasnije od vilenjaka i 
+									verovatno značajno posle patuljaka. Po izgledu su bili veoma slični vilenjacima, s' tim što su bili smrtni, 
+									ovu karakteristiku ljudi, Tolkin naziva Dar ljudi (engl. Gift of Man). Ljudi su starili i umirali 
+									(živeli su u proseku od 40-80 godina, osim Numenorejaca koji su živeli po nekoliko vekova) fizički su, 
+									kako Tolkin opisuje, bili u proseku manje lepi od vilenjaka. Tri plemena ljudi se ujedinilo se vilenjacima 
+									Belerijanda i borilo na njihovoj strani. Zahvaljujući ovim prvim ljudima (Edaini), njihovi potomci su od 
+									Valara dobili da se nasele na ostrvu Numenor, između Srednje zemlje i Amana. Kao što je ispričano u istoriji 
+									Srednje zemlje, Numenor je uništen, a oni još uvek verni Numenorejci su se naselili u Srednjoj zemlji i nazvani
+									su Dunedaini, osnovali su kraljevstva Arnor i Gondor, dok su se neki Numenorejci naselili na jugu u zemljama 
+									Harada i postali sluge Saurona, oni su nazvani Crni Numenorejci.
+									<br /><br />
+									Dunedaini kao potomci Numenorejaca žive duže od običnih ljudi, zato što su Numenorejci pored samog ostrva dobili
+									i blagoslov dugog života. Dunedaini u trećem dobu ne žive dugo kao Numenorejci usled mešanja sa običnim ljudima,
+									ali i dalje žive znatno duže od ostalih ljudi. Pored Dunedaina u Hobitu se pominje i Beorn, izuzetno veliki 
+									čovek sposoban da se pretvori u velikog medveda. Beorn je jedan iz naroda Beorninga, koji se u trećem dobu 
+									spustio sa planina i naselio na obodu Mrke šume. Beorninzi su u savezu sa ljudima Mrke šume i štite ih od napada
+									orka i goblina. u Srednjoj zemlji na kraju trećeg doba razlikujemo više naroda ljudi: Ljude Gondora, Ljude Rohana
+									(Rohirime), Slobodne ljude Erijadora, Divlje ljude Dunlanda (Dunlendinge), Istočnjake (Isterlinge) i Ljude Harada (Haradrime).
+									<br /><br />
+									Kraljevi ljudi su od Saurona dobili devet prstenova moći, ali su usled slabe snage uma i volje, koja je jedna od
+									osobina ljudi Srednje zemlje, svi pali pod kontrolu Saurona i tako postali Nazguli (Utvare prstena). Nakon pada 
+									Saurona i kraja trećeg doba, većina ostalih rasa u Srednjoj zemlji propada dok se rasa ljudi uzdiže. Padom Saurona
+									počinje vladavina ljudi u Srednjoj zemlji.
+									<br /><br />
+									Neki od značajnijih ljudi su bili: Aragorn, Earendil, Isildur, Beren, Boromir, Elendil, Turin Turambar itd
+								</div>
+							</div>
+							
+							<div class="tab-pane" id="patuljci">
+								<div class="media">
+									<div class="media-left">
+										<a href="" data-toggle="modal" data-target="#patuljci_slika">
+											<img class="img-responsive mr-3" src="../slike/durin_logo.png" style="width:200px; margin-top:10px;">
+										</a>
+										<div id="patuljci_slika" class="modal fade" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content text-center">
+													<div class="modal-body">
+														<img src="../slike/durin_logo.png" class="img img-fluid"/>
+														<br />
+														Simbol patuljaka Durinove loze
+														<br /><br />
+														<form method="post" action="../slike/durin_logo.png">
+															<button type="submit" class="btn btn-dark">PRIKAZI U PUNOJ REZOLUCIJI</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="bg-warning text-justify">
+										Patuljke je stvorio Vala Aule, ali je ponudio i da ih uništi kada mu se Iluvatar suprotstavio. 
+										Aule je stvorio sedam očeva patuljaka koji su u početku bili beživotni jer Aule nije imao moć da 
+										stvara život, ali ih je Iluvatar oživeo uvidevši da Aule nije imao nameru da mu prkosi. 
+										Jedini uslov koji je Iluvatar postavio je taj da im nije dozvoljeno da se probude pre vilenjaka 
+										što je on i ispoštovao, uspavao ih je stavio ispod planina širom Srednje zemlje. 
+										Kada su se konačno probudili, svaki od njih je postao osnivač svoje loze i svaki je osnovao svoje kraljevstvo. 
+										Tolkinovi je za patuljke dobio inspiraciju u staroengleskim i staronordijskim mitovima. 
+										Prvi od patuljaka Srednje zemlje koji se probudio bio je Durin koji je bio osnivač loze Dugobradih, 
+										oko kojih se vrte gotovo sve Tolkinove priče, on je osnovao i najslavnije patuljačko kraljevstvo
+										Kazad-dum (vilenjaci su ga nazvali Morija, što sindarinu znači "crni ponor") u Maglenim planinama.
+										Patuljci su napustili Moriju tokom drugog doba kada su usled prevelikog kopanja probudili Balroga,
+										ali su je krajem trećeg doba ponovo naselili nakon što je Gandalf ubio Balroga. Pored Kazad-duma, 
+										Tolkin je pomenuo još samo par patuljačkih kraljevstava Nogrod i Belegost, u Plavim planinama (Ered Luin).
+										Ona su bila dom Vatrenobradih i Širokogrudih koji su se tokom prvog doba borili na strani vilenjaka Belerijanda
+										u ratu protiv Morgota. Patuljci su, kao ljudi, smrtni ali žive značajno duže, u proseku oko 250 godina. 
+										Niskog su rasta ali krupne građe i imaju karakteristiku da muškarci i žene nose brade te su bili teško prepoznatljivi
+										za druge rase. U Silmarilionu je opisana i rasa sitnih patuljaka koji su bili izuzetno pokvareni i odbačeni od
+										svojih rodova, njih su vilenjaci izrazito lovili i verovatno su ih istrebili.
+										<br /><br />
+										Napisano je kako su od svih rasa patuljci bili najmanje podložni korupciji i uticaju Morgota, a kasnije i Saurona. 
+										To objašnjava činjenica da ih je stvorio Aule i da su oni bili povezani sa njegovom moći. 
+										Patuljci su dobili sedam prstenova moći, jedan za svaki rod patuljaka, ali ti prstenovi nisu puno uticali na patuljke,
+										jer je vrlo malo patuljaka svojevoljno služilo silama mraka i o njima je vrlo malo pisano.Jedino što su 
+										prstenovi prouzrokovali jeste dodatnu pohlepu za zlatom i blagom. Sauron je povratio tri prstena moći od 
+										patuljaka dok su ostala četiri, prema Gandalfu uništeno od strane zmajeva. Ono što je poznato jeste da je 
+										samo nekoliko od sedam patuljačkih kuća učestvovalp u borbala „Poslednjeg saveza” na kraju Drugog doba, 
+										ali je poznato da niko od patuljaka Durinove loze nije učestvovao u borbama na strani zla. 
+										U ranom razdoblju Trećeg doba poznato je da su se iskvareni patuljci na nekim mestima stvarali saveze 
+										sa orcima i goblinima. Tolkin je u svojim beleškama nagovestio da od patuljaka koji su podlegli zlobi
+										većina je živela u naseobinama na dalekom istoku (istočnije od Gvozdenih brda, koji su najistočnija 
+										naseobina patuljaka koja je opisana) i koji su potpali pod „senku Morgota”.) Patuljcima zloba nije u prirodi,
+										malo ih je ikada služilo svojevoljno mračnom gospodaru (dok je za ljude ta brojka znatno veća).
+										<br /><br />
+										Najpoznatija prebivališta patuljaka u trećem dobu su bila Gvozdena brda, Erebor, Plave Planine i Kazad-dum. 
+										Sedam porodica patuljaka su bile:
+										<br />
+
+											<b>Dugobradi<br />
+											Vatrenobradi<br />
+											Širokogrudi<br />
+											Gvozdenpesnice<br />
+											Tvrdobradi<br />
+											Crnobravi<br />
+											Kamenožni</b>
+										<br /><br />
+										Patuljci su nakon pada Saurona ponovo naselili Moriju i nastavili da žive, iako se o njihovoj konačnoj 
+										sudbini ništa ne zna pouzdano, pretpostavlja se da su i oni vremenom iščezli iz Srednje zemlje, 
+										ali mnogo kasnije od vilenjaka. Tolkin pominje razna imena za patuljke: na Kazdulu (patuljačkom jeziku
+										koji je za njih stvorio Aule) oni su sebe nazivali Kazad (Khazâd); na sindarinu (jeziku šumskih vilenjaka)
+										bili su poznati kao Naugrimi (zakržljali narod), Gonhirimi (kameni gospodari) i Dornhot (namrgođeni). 
+										Na kveniji (jeziku visokih vilenjaka) bili su poznati kao Cesari.
+										<br /><br />
+										Tolkin je kao inspiraciju za patuljke iskoristio srednjevekovni pogled na Jevreje, i kao njihove atribute 
+										im pripisuje veliku ljubav prema bogatstvu (zlatu i draguljima), volju za radom i njihovu istrajnost u tome,
+										što se oslikava u stigmatizaciji jevreja koja je bila prisutna još od srednjeg veka. Ističe patuljačku 
+										tajnovitost jer nisu težili da šire svoju kulturu sa strancima već su živeli izolovani duboko ispod zemlje 
+										u velikim dvoranama čuvajući svoje obrede i svoj samo za sebe. Prema Tolkinovim izjavama nakon Drugog svetskog rata,
+										kada su ga neki optuživali za rasizam i anti-semitizam, ovu paralelu patuljaka i Jevreja je objasnio kao skroz spontanu,
+										jer na početku nije imao takvu nameru ali da su se sličnosti same pojavljivale kako je vreme odmicalo te se i on sam
+										tome prepustio upotrebljujući Semitske jezike kao osnovu za patuljački. Bitno je napomenuti da Tolkin nije voleo metaforu
+										i alegoriju i retko ih je u svojim delima upotrebljavao smatrao ih je „Površnim shvatanjem i oblikovanjem istine”.
+										<br /><br />
+										Neki od značajnijih patuljaka su bili: Gimli, Durin, Torin Hrastoštit, Balin itd.
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane" id="hobiti">
+								<div class="bg-warning text-justify">
+									Hobiti su prema Tolkinovom pisanju predstavljali pod-vrstu Ljudi. Dok ih neki tumače i kao rođake ljudi. U samoj Srednjoj zemlji, hobiti su sebe smatrali potpuno drugom rasom. Ljudi su hobite nazivali "polutanima" pošto im je visina dostizala jedva nešto više od polovine visine prosečnih ljudi. Po stilu života su vrlo podsećali na ljude, osim po tome što su preferarili da žive ispod zemlje, u rupama, ali ne u običnim rupama već u hobitskim rupama koje su imale sve karakteristike toplog doma, kako Tolkin navodi. Iako se o njihovom postanku ništa ne zna, a o njihovoj istoriji nam Tolkin govori vrlo malo. Govori nam o tome kako su u ranom trećem dobu živeli u dolinama reke Anduin, ali da su tokom hiljada godina migrirali preko Maglenih planina i naselili se u Erijadoru tj. pretežno u Okrugu i obližnjem Briju. Hobiti su vodili uglavnom miran život uživajući u toplotama svog doma i retko lutajući daleko od kuće. Uživali su u obilju hrane, imajući i do šest obroka dnevno. Fizičke karakteristike hobita, pored niskog rasta, su izuzetno dlakavi i čvrsti tabani, zbog čega nisu morali da nose nikakvu obuću i najčešće su hodali bosi. Većina hobita je zazirala od velikih voda i nisu bili neki plivači.
+									<br /><br />
+									Prvo pominjanje hobita kod Tolkina možemo datirati pre nastanka Hobita i Gospodara prstenova, kada je na praznom papiru njegovog studenta napisao „U rupi u zemlji, živeo je hobit”, kasnije će ta rečenica postati uvod u Gospodar prstenova.
+									<br /><br />
+									Iako krhke spoljašnosti bili su veoma vedrog duha uvek spremni za igru i zabavu, takođe su imali vrlo jaku snagu volje, prilog tome je to što Jedinstveni prsten gotovo da nije imao uticaja nad Frodom, dok bi u sekundi kvario srca snažnih ljudi. Kada se rat za prsten završio, a Sauron bio konačno poražen, Saruman je sa velikom grupom razbojnika napao i okupirao Okrug. Tako okupiran Okrug su zatekli Frodo, Sem, Meri i Pipin pa su okupili vojsku hobita i borili se protiv razbojnika, hobiti su preovladali i oslobodili Okrug, a Sarumana proterali ovaj događaj je kod Tolkina poznat kao Čišćenje okruga. Posle ovih događaja hobiti su se vratili svojim mirnim životima, živeći kao i pre gotovo neprimećeni od ostalih ljudi baveći se svojim poslovima i neželeći da se mešaju u poslove velikog sveta (ljudi). Tolkin nam govori kako su hobiti opstali sve do današnjih dana, kako čak i danas žive mirno, neprimećeni od velikih ljudi.
+									<br /><br />
+									Tolkin je više puta izjavio da je kao inspiraciju za Okrug imao Englesku, a da su hobiti samo obični Englezi.
+									<br /><br />
+									Tolkin nam kazuje o tri vrste hobita koji su naselili okrugu:
+									<br />
+										<b>Harfuti</b> - su najbrojniji i prvi koji su ušli u Erijador, Tolkin ih opisuje kao najsitnije. Oni su imali bliskije odnose sa patuljcima nego ostali hobiti, takođe su imali i najdlakavija stopala, ta igra reči je Tolkinu poslužila u njihovom imenovanju.<br />
+										<b>Sturi</b> - su drugi najbrojniji i poslednji koji su ušli u Erijador. Oni su znatno krupniji od ostalih hobita i uglavnom žive pored reka i jedini znaju da upravljaju brodovima i da plivaju. Takođe su manje "stidljivi" od ljudi.<br />
+										<b>Falohajdi</b> - populacijski najmanje brojna vrsta hobita, oni su drugi koji su ušli u Erijador. Uglavnom su viši od ostalih hobita i vole šume i divljinu. Oni su uglavnom lideri hobita i skloni avanturama, čak imaju i kontakte sa vilenjacima.
+									<br /><br />
+									Neki od značajnijih hobita su: Frodo Bagins, Bilbo Bagins, Peregrin Tuk, Merijadok Brendibak, Semvajs Gemdži, Smigol iBandobras Tuk.
+								</div>
+							</div>
+							
+							<div class="tab-pane" id="orci_trolovi">
+								<div class="bg-warning text-justify">
+									Orci i trolovi su zla stvorenja koja je stvorio Morgot kao suprotnost deci Iluvatarovoj. 
+									Tačno poreklo orka i trolova se ne zna. Jedna teorija za postanak orka govori kako su oni 
+									izopačena verzija vilenjaka koje je Morgot stvorio zarobivši neke od vilenjaka pre prvog 
+									doba i mučivši ih unakazio, dok druga teorija govori kako je orke Morgot stvorio iz zemlje. 
+									Tolkin je kao naziv za orke bio inspirisan staroengleski nazivom (Orc) za rimskog boga podzemlja Orkusa (lat. Orcus).
+									<br /><br />
+									Orci su opisani kao ružna i prljava stvorenja koja su imala crnu grubu kožu, visina je 
+									varirala u zavisnosti od vrste, neki su bili visoki kao ljudi, čak i viši, dok su neki 
+									bili visine hobita. Orci koji su služili Sauronu su bili nešto niži od ljudi i bili su 
+									pogrbljeni, u bitkama nisu imali jaku disciplinu niti su bili dobri ratnici pa im je u 
+									borbi najveći adut bila brojnost, čim bi bili jače napadnuti u redovima bi nastupalo rasulo.
+									Tolkin orke opisuje kao „uvek gladne”. kako za hranom (u šta je spadalo i meso drugih rasa) 
+									tako i za ratom. Pored regularnih orka koji su služili Sauronu u Mordoru, Saruman je razvio 
+									novu vrstu orka poznatih kao Uruk-hai, oni su bili znatno viši od običnih orka bili su visine
+									ljudi i nisu bili pogrbljeni, opisani su i kao veoma inteligentni. Bili su poznati kao odlični
+									i vešti ratnici, za razliku od običnih orka imali su vrlo jaku vojničku disciplinu i fizički su 
+									bili veoma izdržljivi. Pored ove dve navedene vrste takođe razlikujemo i treću vrstu orka, a to 
+									su goblini (mada oko ovoga postoje razne rasprave da li su goblini podvrsta orka ili pak drugi naziv za orke).
+									Oni su opisani kao izuzetno niski (visine hobita) i pogrbljeni, takođe su opisani kao veoma slabi 
+									i retko se kreću samostalno izvan većih grupa, takođe preferiraju život ispod zemlje tj. u pećinama. 
+									Uruk-hai gobline nazivaju snaga (robovi). Pored ove tri, Tolkin pominje i polu-orke, njih opisuje kao
+									mešavinu ljudi i orka, fizički izgledaju više kao ljudi ali se ponašaju kao orci.
+									<br /><br />
+									Trolove Tolkin opisuje kao zle džinove koji su najverovatnije nastali kao Morgotovo podrugivanje Entima. 
+									Trolovi su predstavljeni kao ogromne i debele zveri velike snage, takođe su predstavljeni kao izuzetno glupi.
+									Većina trolova su kameni trolovi koji žive uglavnom u planinama i pećinama i izlaze isključivo noću zato
+									što ih izlaganje suncu pretvara u kamen, upravo se to desilo sa tri trola u "Hobitu". Iz ovog razloga 
+									trolovi su veoma teško upotrebljavani u ratu te oni uglavnom lutaju divljinom, Sauron je upravo iz tog
+									razloga stvorio novu vrstu trolova poznatih kao Olog-hai koji su bili nešto veći od kamenih trolova i 
+									znatno snažniji, ali glavna karakteristika koja je činila njih drugačijim jeste to što su oni mogli da 
+									opstanu na suncu i nisu se pretvarali u kamen, tako da su oni mogli da budu upotrebljeni od strane Saurona
+									u bitkama. U bitkama su trolovi bili dobro oklopljeni što je pored njihove kože, koja je sama po sebi bila
+									neka vrsta oklopa, trola pretvaralo u gotovo neuništivog. Nakon uništenja prstena, Tolkin ih opisuje kako
+									izbezumljeno tumaraju divljinom.
+									<br /><br />
+									Neki od značajnijih orka i trolova su: Gotmog, Azog, Bolg, Grišnak i Ugluk
+								</div>
+							</div>
+							
+							<div class="tab-pane" id="enti">
+								<div class="bg-warning text-justify">
+									Enti su nastali na zahtev Javane, od strane Eru Iluvatara kao zaštitnici drveća i šuma. Drugi naziv za ente 
+									jeste Onodrimi što u prevodu znači „pastiri šuma”, i za cilj su imali da zaštite šume Arde od pustošenja 
+									od strane vilenjaka, patuljaka, ljudi i orka. Reč „ent” je Tolkin preuzeo iz staroengleskog i ima značenje „džin”.
+									Gandalf navodi kako su enti oni najstariji narod i stvoreni su pre svih, nastali su tako što je Iluvatar udahnuo život drveću. 
+									Enti su posedovali sposobnost govora zahvaljujući vilenjacima koji su ih tome naučili. Enti su veoma spora i smirena bića, 
+									sve rade promišljeno takođe oni su do neke mere besmrtna bića ali njihovo propadanja se ne odražava u smrtnosti već u tome
+									što se enti vremenom pretvaraju u drveće. Pored enta postojali su takođe u hvorni, koji su mešavina enta i drveća, oni su 
+									drveće koje je moglo povremeno da se pomera ali ne i da govori ili su pak bili enti koji su počeli transformaciju u drveće.
+									Poslednje prebivalište enta je šuma Fangorn, ona se takođe pominje i kao najstarija šuma u Srednjoj zemlji, mada pored 
+									Fangorna postoje indicije da enti i hvorni žive i u Erijadoru tačnije u Staroj šumi, na granici Okruga. Enti žive usamljenički
+									život pošto Entine (žene Enta) više ne žive u Fangornu, one su se odselile (pretpostavlja se u Erijador) i zauvek nestale 
+									pretvorivši se u drvo. Enti su gajili veliku mržnju prema orkama, pošto su ovi često pustošili i palili šume.
+								</div>
+							</div>
+							
+							<div class="tab-pane" id="zivotinje">
+								<div class="bg-warning text-justify">
+									<b>Orlovi</b> su inteligentne i donekle magična bića Srednje zemlje, Tolkin ih u svojim radovima često naziva 
+									„džinovski orlovi”, zato što su bili znatno veći od običnih orlova. Oni su veoma inteligentna bića posedovali 
+									su sbosobnost govora i živeli su pretežno u Maglenim planinama, praveći gnezda na nepristupačnim liticama. 
+									Živeli su odvojeno od ostatka sveta ne mešajući se preterano u živote i ratove drugih bića ali su gajili prijateljstva
+									sa vilenjacima Rivendela i sa Istarima (čarobnjacima), najviše sa Gandalfom. Tolkin nije do kraja pojasnio poreklo
+									orlova ali se zna da su nastali kao kreacija Manvea (valara vetra). U Silmarilionu i ranim radovima Tolkin navodi 
+									da su džinovski orlovi niži majari poslati u srednju zemlju u obliku orlova ali kasnije navodi da su oni samo obične
+									životinje, naučene govoru. Kako su enti bili zaštitnici biljnog sveta, tako su orlovi bili zaštitnici životinjskog sveta.
+									<br />
+									Neki od orlova koji se spominju od strane Tolkina su: Torondor, pominje se kao Gospodar orlova u Silmarilionu, 
+									Gvaihir, pominje se kao Kralj orlova u Hobitu i Gospodaru prstenova. Još se imenom pominju i orlovi Meneldor i 
+									Landroval. Orlovi su više puta tokom ratova dolazili u pomoć vilenjacim, ljudima i patuljcima.
+									<br /><br />
+									<b>Varge</b> su zla bića i predstavljaju veću i izopačeniju verziju vukova. 
+									Varge se opisuju kao vrlo krvoločne, navodi se kako varge najčešće žive i love u čoporima. 
+									Varge sarađuju sa orcima i goblinima kojima jedino dopuštaju da ih jašu, tako predstavljajući 
+									određenu vrstu "konjice" Sauronovih snaga. Tolkin opisuje varge kao potomke vukodlaka, bića koja
+									je Morgot stvorio kombinujući vukove sa duhovima nižih Majara. Tolkin nam nikada nije dao potpun i 
+									precizan opis vargi. Poreklo reči "varga" takođe možemo pronaći u staroengleskom jeziku što u prevodu 
+									znači "divlji vuk" ili pak samo "vuk".
+									<br /><br />
+									<b>Zmajevi</b> su bili ogromna bića najčešće u službi Morgota ili Saurona. 
+									Zmajeve možemo podeliti na nekoliko načina, prema sposobnosti da bljuju vatru: vatrene zmajeve i hladne zmajeve.
+									Prema sposobnosti za letenje: krilate zamejeve i crve. Zmajevi su opisani kao izuzetno inteligentna bića, 
+									posedovali su sposobnost govora i bili su izuzetno privučeni zlatom. Glaurung je bio prvi zmaj koji je imao mogućnost
+									da bljuje vatru i bio je poznat kao otac zmajeva, njega je ubio Turin. Najveći od svih zmajeva i prvi krilati vatreni 
+									zmaj je bio Ankalagon Crni, ovaj zmaj je takođe bio sluga Morgotov, njega je ubio Earendil uz pomoć Torondora, 
+									gospodara orlova. U trećem dobu nije ostalo puno zmajeva jer su bili u konstantnom sukobu sa patuljcima, poslednji veliki 
+									vatreni zmaj je bio Šmaug, on je uništio Erebor, kraljevstvo patuljaka, ali je kasnije ubijen. Njegovo ubistvo je opisano
+									u Hobitu. Neki zmajevi su još preživljavali u severnim planinama i pustošili su gradove patuljaka ali ovi su ih konstantno
+									lovili i u tom lovu su postajali sve efikasniji. Tolkin je umesto reči "zmaj" (engl. Dragon) češće upotrebljavao termin "aždaja"
+									(engl. Drake) ili "crv" (engl. Worm).
+									<br /><br />
+									<b>Vrane</b> se takođe pominju kao špijuni u službi Sarumana.
+									<br /><br />	
+									<b>Gavrani</b> se pominju kao ptice koje su patuljci koristili za prenošenje poruka tako što su ih naučili da govore.
+									<br /><br />
+									Važno je napomenuti da u Tolkinovom svetu životinje zauzimaju veoma bitno mesto i često u sebi sadrže nešto magično. Tolkinova definicija magije se razlikuje od klasičnog viđenja magije i magičnog, ta Tolkinova crta se ocrtava u mnogim aspektima sveta, među kojima su svakako i Tolkinove životinje.
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container text-center bg-dark pt-5">
+				<i>
+					Jedan prsten da svima gospodari, jedan sa svima seže 
+					jedan prsten da sve okupi i u tami ih sveže
+				</i>
+				<br />
+				<img src="../slike/ring1.gif" />
+				<br />
+				<div class="text-warning">
+					
+					<span>
+						Copyright 2018 | Marko Jovanovic <br /> Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta u Beogradu
+					</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
